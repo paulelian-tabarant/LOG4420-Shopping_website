@@ -5,6 +5,36 @@
   <title>OnlineShop - Commande</title>
 </head>
 <body>
-<!-- TODO -->
+	<header>
+		<a href="index.html"><img alt="logo" src="./assets/img/logo.svg"></a>
+		<nav>
+			<a href="index.html">Accueil</a>
+			<a href="products.html">Produits</a>
+			<a href="contact.html">Contact</a>
+			<a href="shopping-cart.html">Panier</a>
+		</nav>
+	</header>
+	<main>
+		<h1>Ma commande</h1>
+		<form action="confirmation.html">
+			<section>
+				<h2>Contact</h2>
+				<span>Prenom</span><input id="first-name" type="text" name="prenom" required><br>
+				<span>Nom</span><input id="last-name" type="text" name="nom" required><br>
+				<span>Adresse mail</span><input id="email" type="email" name="mail" required><br>
+				<span>Numero de telephone</span><input id="phone" type="tel" name="tel" required><br>
+			</section>
+			<section>
+				<h2>Paiement</h2>
+				<span>Numero de carte de credit</span><input id="credit-card" type="number" name="card" required><br>
+				<span>Date d'expiration de la carte</span><input id="credit-card-expiry" type="date" name="date" required>
+			</section>
+			<input type="submit" name="envoyer" value="Payer">
+		</form>
+	</main>
+	<footer>
+		<p>Alban Deniau - 1929132</p>
+		<p>Paul-Elian Tabarant - 1969626</p>
+	</footer>
 </body>
 </html>
