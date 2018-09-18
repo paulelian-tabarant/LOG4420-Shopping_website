@@ -3,27 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <title>OnlineShop - Contact</title>
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 <body>
-	<header>
-		<a href="index.html"><img alt="logo" src="./assets/img/logo.svg"></a>
-		<nav>
-			<a href="index.html">Accueil</a>
-			<a href="products.html">Produits</a>
-			<a href="contact.html">Contact</a>
-			<a href="shopping-cart.html">Panier</a>
-		</nav>
-	</header>
-	<section>
-		<h1>Nous contacter</h1>
-		<address>
-			OnlineShop SAS<br>
-			1 rue de l'entreprise<br>
-			A1A 1B1 Montréal, Canada<br>
-			<a href="mailto:courriel@gmail.com">courriel@gmail.com</a><br>
-			<a href="tel:514-111-1111">514-111-1111</a>
-		</address>
-	</section>
+	<div class="wrapper">
+		<header>
+			<div>
+				<a href="index.html"><img alt="logo" src="./assets/img/logo.svg"></a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Accueil</a></li>
+						<li><a href="products.html">Produits</a></li>
+						<li><a class="active" href="contact.html">Contact</a></li>
+						<li>
+							<a class="shopping-cart" href="./shopping-cart.html" title="Panier">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+									<i class="fa fa-shopping-cart fa-stack-1x"></i>
+								</span>
+								<div class="count">3</div>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section>
+			<h1>Nous contacter</h1>
+			<address>
+				OnlineShop SAS<br>
+				1 rue de l'entreprise<br>
+				A1A 1B1 Montréal, Canada<br>
+				<a href="mailto:courriel@gmail.com">courriel@gmail.com</a><br>
+				<a href="tel:514-111-1111">514-111-1111</a>
+			</address>
+		</section>
+		<div class="push"></div>
+	</div>
 	<footer>
 		<p>Alban Deniau - 1929132</p>
 		<p>Paul-Elian Tabarant - 1969626</p>

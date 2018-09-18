@@ -3,22 +3,40 @@
 <head>
 	<meta charset="UTF-8">
 	<title>OnlineShop - Accueil</title>
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 <body>
-	<header>
-		<a href="index.html"><img alt="logo" src="./assets/img/logo.svg"></a>
-		<nav>
-			<a href="index.html">Accueil</a>
-			<a href="products.html">Produits</a>
-			<a href="contact.html">Contact</a>
-			<a href="shopping-cart.html">Panier</a>
-		</nav>
-	</header>
-	<main>
-		<h1>Bienvenue sur OnlineShop</h1>
-		<p>Ici on vend des trucs que vous ne trouverez nulle part ailleurs. <a href="products.html">Consultez nos produits</a></p>
-		<img alt="home" src="./assets/img/home.png">
-	</main>
+	<div class="wrapper">
+		<header>
+			<div>
+				<a href="index.html"><img alt="logo" src="./assets/img/logo.svg"></a>
+				<nav>
+					<ul>
+						<li><a class="active" href="index.html">Accueil</a></li>
+						<li><a href="products.html">Produits</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li>
+							<a class="shopping-cart" href="./shopping-cart.html" title="Panier">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+									<i class="fa fa-shopping-cart fa-stack-1x"></i>
+								</span>
+								<div class="count">3</div>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="main-content">
+			<h1>Bienvenue sur OnlineShop</h1>
+			<p>Ici on vend des trucs que vous ne trouverez nulle part ailleurs.</p><br>
+			<a class="bouton" href="products.html">Consultez nos produits</a>
+			<img id="home-img" alt="home" src="./assets/img/home.png">
+		</main>
+		<div class="push"></div>
+	</div>
 	<footer>
 		<p>Alban Deniau - 1929132</p>
 		<p>Paul-Elian Tabarant - 1969626</p>
