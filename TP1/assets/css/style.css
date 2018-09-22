@@ -31,12 +31,16 @@ a {
 	display: flex;
 	flex-wrap: nowrap;
   justify-content: space-between;
+	margin: 10px 0px;
 }
 .col {
 	flex-grow: 1;
 }
 .col img {
 	width: 100%;
+}
+.separator {
+	margin: 20px 5px;
 }
 
 /*** HEADER ***/
@@ -187,4 +191,23 @@ footer {
 .product-details .col {
 	width: 50%;
 }
-
+.product-details h2 {
+	margin: 15px 0px;
+}
+#price-value {
+	font-weight: bold;
+}
+#cart-form {
+	float: right;
+	justify-content: flex-end;
+	align-items: center;
+}
+#cart-form * {
+	margin: 0px 5px;
+}
+#cart-form > #quantite {
+	width: 25%;
+}
+#cart-form .fa-cart-plus {
+	color: white;
+}
