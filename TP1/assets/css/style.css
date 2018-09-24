@@ -42,6 +42,13 @@ a {
 .separator {
 	margin: 20px 5px;
 }
+.default-border {
+	border: solid 1px #999999;
+	border-radius: 4px;
+}
+h1, p {
+	margin: 15px 0px;
+}
 
 /*** HEADER ***/
 
@@ -210,4 +217,20 @@ footer {
 }
 #cart-form .fa-cart-plus {
 	color: white;
+}
+
+/** CONTACT PAGE **/
+#contact-options > .col {
+	text-align: center;
+	width: 33%;
+	padding: 15px 0px;
+}
+#contact-options a {
+	color: #4286f4;
+}
+#contact-options div {
+	margin: 5px 0px;
+}
+#contact-options span {
+	font-size: 5em;
 }
