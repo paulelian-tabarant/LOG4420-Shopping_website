@@ -31,7 +31,7 @@
 		</header>
 		<main class='main-content flex'>
 			<h1>Apple TV</h1>
-			<div class="product-details row">
+			<div class="product-details flex">
 				<div class="col">
 					<img  alt="apple-tv" src="./assets/img/apple-tv.png">
 				</div>
@@ -47,11 +47,13 @@
 						<li>Réseau: Wi-Fi (802.11a/b/g/n/ac), 10/100 Ethernet, Bluetooth, AirPlay</li>
 					</ul>
 					<hr class="separator">
-					Prix: <span id="price-value">249.99 $</span>
-					<form id="cart-form" class="row">
-						<label for="quantite">Quantité : </label><input id="quantite" type="number" name="quantite" value="1" min="0"><br>
-						<button class="bouton"><span class="fas fa-cart-plus"></span> Ajouter</button>
-					</form>
+					<div class="flex">
+						<p>Prix: <span id="price-value">249.99 $</span></p>
+						<form id="form-product">
+							<label for="quantite">Quantité : </label><input class="default-border" id="quantite" type="number" name="quantite" value="1" min="0">
+							<button class="bouton"><span class="fas fa-cart-plus"></span> Ajouter</button>
+						</form>
+					</div>
 				</div>
 			</div>
 		</main>

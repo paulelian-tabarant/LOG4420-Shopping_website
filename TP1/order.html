@@ -29,28 +29,44 @@
 				</nav>
 			</div>
 		</header>
-		<main>
+		<main class="main-content">
 			<h1>Ma commande</h1>
-			<form action="confirmation.html">
-				<section>
+			<form id="form-order" action="confirmation.html">
+				<section id="order-contact">
 					<h2>Contact</h2>
-					<label for="first-name">Prénom</label>
-					<input id="first-name" type="text" name="prenom" required><br>
-					<label for="last-name">Nom</label>
-					<input id="last-name" type="text" name="nom" required><br>
-					<label for="email">Adresse e-mail</label>
-					<input id="email" type="email" name="mail" required><br>
-					<label for="phone">Numéro de téléphone</label>
-					<input id="phone" type="tel" name="tel" required><br>
+					<div class="flex">
+						<div class="col">
+							<label for="first-name">Prénom</label>
+							<input class="default-border" id="first-name" type="text" name="prenom" placeholder="Prénom" required><br>
+						</div>
+						<div class="col">
+							<label for="last-name">Nom</label>
+							<input class="default-border" id="last-name" type="text" name="nom" placeholder="Nom" required><br>
+						</div>
+						<div class="col">
+							<label for="email">Adresse e-mail</label>
+							<input class="default-border" id="email" type="email" name="mail" placeholder="Adresse mail" required><br>
+						</div>
+						<div class="col">
+							<label for="phone">Numéro de téléphone</label>
+							<input class="default-border" id="phone" type="tel" name="tel" placeholder="###-###-####" required><br>
+						</div>
+					</div>
 				</section>
-				<section>
+				<section id="order-paiement">
 					<h2>Paiement</h2>
-					<label for="credit-card">Numéro de carte de crédit</label>
-					<input id="credit-card" type="number" name="card" required><br>
-					<label for="credit-card-expiry">Date d'expiration de la carte</label>
-					<input id="credit-card-expiry" type="date" name="date" required>
+					<div class="flex">
+						<div class="col">
+							<label for="credit-card">Numéro de carte de crédit</label>
+							<input class="default-border" id="credit-card" type="text" name="card" placeholder="**** **** **** ****" required><br>
+						</div>
+						<div class="col">
+							<label for="credit-card-expiry">Date d'expiration de la carte</label>
+							<input class="default-border" id="credit-card-expiry" type="date" name="date" required>
+						</div>
+					</div>
 				</section>
-				<input type="submit" name="envoyer" value="Payer">
+				<input class="bouton" type="submit" name="envoyer" value="Payer">
 			</form>
 		</main>
 		<div class="push"></div>
