@@ -9,17 +9,17 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +233 assets/css/style.css
+badd +145 assets/css/style.css
 badd +34 index.html
-badd +48 products.html
+badd +56 products.html
 badd +1 products
 badd +18 product.html
 badd +20 ~/.vimrc
-badd +34 contact.html
+badd +71 contact.html
 argglobal
 silent! argdel *
 $argadd assets/css/style.css
-edit contact.html
+edit index.html
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
@@ -38,12 +38,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 46 - ((45 * winheight(0) + 24) / 48)
+let s:l = 35 - ((34 * winheight(0) + 24) / 48)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-46
-normal! 032|
+35
+normal! 08|
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf

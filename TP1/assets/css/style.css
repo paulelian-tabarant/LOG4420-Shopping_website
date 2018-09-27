@@ -138,10 +138,8 @@ footer {
 	flex-direction: column;
 	justify-content: center;
 }
-footer p 
 
 /*** INDEX ***/
-
 #img-legend {
 	display: inline-block;
 }
@@ -178,6 +176,9 @@ footer p
 }
 #products-main {
 	flex-basis: 75%;
+}
+#products-header {
+	align-items: center;
 }
 #products-list {
 	align-content: space-around;
