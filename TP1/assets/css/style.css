@@ -13,6 +13,8 @@ h1, h2, h3, p {
 }
 .main-content {
 	padding: 0 20px;
+	max-width: 1200px;
+	margin: auto;
 }
 .push {
 	height: 70px;
@@ -297,9 +299,12 @@ button .bouton {
 	display: block;
 }
 #form-order section div > div input {
-	width: 95%;
+	width: 100%;
 	padding: 0.5em;
 }
+#form-order .col {
+	flex-basis: 49%;
+}
 #form-order > input {
-	
+	float: right;
 }
