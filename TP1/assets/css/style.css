@@ -299,11 +299,11 @@ button .bouton {
 	display: block;
 }
 #form-order section div > div input {
-	width: 100%;
+	width: 97%;
 	padding: 0.5em;
 }
 #form-order .col {
-	flex-basis: 49%;
+	flex-basis: 50%;
 }
 #form-order > input {
 	float: right;
