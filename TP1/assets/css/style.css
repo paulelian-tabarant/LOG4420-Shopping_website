@@ -3,14 +3,18 @@
 * {
 	box-sizing: border-box;
 	margin: 0;
-	color: black;
 	font-family: "Arial", sans-serif;
 }
 html, body {
 	height: 100%;
 }
+h1, h2, h3, p {
+	color: black;
+}
 .main-content {
 	padding: 0 20px;
+	max-width: 1200px;
+	margin: auto;
 }
 .push {
 	height: 70px;
@@ -19,14 +23,54 @@ html, body {
 	min-height: 100%;
 	margin-bottom: -70px;
 }
-h1 {
-	margin-bottom: 1em;
-}
 .flex {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
+a {
+	text-decoration: none;
+}
+.bouton {
+	color: white;
+	padding: 0.5em;
+	text-decoration: none;
+	background-color: #14597f;
+	border: solid 1px #0b2d3d;
+	border-radius: 4px;
+}
+.bouton:hover {
+	background-color: #1fb5e9;
+	transition: ease-out 0.2s;
+}
+/*.row {
+	display: flex;
+	flex-wrap: nowrap;
+  justify-content: space-between;
+	margin: 10px 0px;
+}*/
+.col {
+	flex-basis: 50%;
+}
+/*.col {
+	flex-grow: 1;
+}*/
+/*.col img {
+	width: 100%;
+}*/
+.separator {
+	margin: 20px 5px;
+}
+.default-border {
+	border: solid 1px #999999;
+	border-radius: 4px;
+}
+h1 {
+	margin: 15px 0px;
+}
+/*h1, p {
+	margin: 15px 0px;
+}*/
 
 /*** HEADER ***/
 
@@ -34,11 +78,12 @@ header {
 	width: 100%;
 	background-color: #14597f;
 	border-bottom: solid 1px #0b2d3d;
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 }
 header div {
 	padding: 0 20px;
 	max-width: 1200px;
+	height: 60px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -54,6 +99,10 @@ header ul li {
 header a {
 	text-decoration: none;
 	color: white;
+	height: 100%;
+}
+header a>img {
+	max-height: 100%;
 }
 header .active {
 	padding: 0.5em;
@@ -91,21 +140,12 @@ footer {
 }
 
 /*** INDEX ***/
-
+#img-legend {
+	display: inline-block;
+}
 #home-img {
 	float: right;
-}
-.bouton {
-	color: white;
-	padding: 0.5em;
-	text-decoration: none;
-	background-color: #14597f;
-	border: solid 1px #0b2d3d;
-	border-radius: 4px;
-}
-.bouton:hover {
-	background-color: #1fb5e9;
-	transition: ease-out 0.2s;
+	width: 30%;
 }
 
 /*** PRODUCTS ***/
@@ -113,10 +153,12 @@ footer {
 #products-aside {
 	flex-basis: 20%;
 }
+#products-aside h3 {
+	margin-top: 10px;
+}
 .btn-group {
 	display: flex;
 	flex-direction: column;
-	border: solid 1px #999999;
 	border-radius: 4px;
 }
 .btn-group button {
@@ -134,4 +176,136 @@ footer {
 }
 #products-main {
 	flex-basis: 75%;
+}
+#products-header {
+	align-items: center;
+}
+#products-list {
+	align-content: space-around;
+}
+#products-list > a {
+	display: block;
+	flex-basis: 31%;
+	margin-bottom: 1em;
+}
+.product {
+	padding: 10px;
+}
+.product h2 {
+	font-size: 1.2em;
+}
+.product img {
+	width: 100%;
+}
+.product:hover {
+	background-color: #f3f3f3;
+	transition: ease-out 0.2s;
+}
+.product p {
+	text-align: right;
+}
+
+/*** PRODUCT ***/
+
+.product-details {
+	margin-bottom: 2em;
+}
+.product-details img {
+	width: 100%;
+}
+.product-details h2 {
+	margin: 15px 0px;
+}
+#price-value {
+	font-weight: bold;
+}
+#form-product {
+	text-align: right;
+}
+#quantite {
+	width: 15%;
+	padding: 0.5em 0 0.5em 0.5em;
+}
+
+/*** CONTACT PAGE ***/
+
+#contact-options > .col {
+	text-align: center;
+	flex-basis: 33%;
+	padding: 15px 0px;
+}
+#contact-options a {
+	color: #4286f4;
+}
+#contact-options div {
+	margin: 5px 0px;
+}
+#contact-options span {
+	font-size: 5em;
+}
+
+/*** SHOPPING CART ***/
+
+table {
+	width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+thead {
+	text-align: left;
+}
+tr {
+	height: 3em;
+}
+tr th:first-child, tr td:first-child{
+	width: 30px;
+}
+tr th:last-child, tr td:last-child{
+	text-align: right;
+}
+tbody button {
+	width: 28px;
+	height: 28px;
+	border-radius: 100px;
+	background-color: #dddddd;
+	margin-right: 1em;
+}
+tbody button.plus {
+	margin-right: 0;
+	margin-left: 1em;
+}
+tbody button:hover {
+	background-color: #bbbbbb;
+}
+.array-border {
+	border-bottom: solid 1px black;
+}
+#total {
+	text-align: right;
+	margin-bottom: 3em;
+}
+button .bouton {
+	cursor: pointer;
+}
+
+/*** ORDER ***/
+
+#form-order #order-contact {
+	margin-bottom: 2em;
+}
+#form-order #order-paiement {
+	margin-bottom: 1em;
+}
+#form-order section div > div label {
+	display: block;
+}
+#form-order section div > div input {
+	width: 97%;
+	padding: 0.5em;
+}
+#form-order .col {
+	flex-basis: 50%;
+}
+#form-order > input {
+	float: right;
 }
