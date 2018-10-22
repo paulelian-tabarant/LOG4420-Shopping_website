@@ -11,6 +11,11 @@ html, body {
 h1, h2, h3, p {
 	color: black;
 }
+button {
+	background-color: white;
+	border-left: none;
+	border-right: none;
+}
 .main-content {
 	padding: 0 20px;
 	max-width: 1200px;
@@ -43,21 +48,9 @@ a {
 	background-color: #1fb5e9;
 	transition: ease-out 0.2s;
 }
-/*.row {
-	display: flex;
-	flex-wrap: nowrap;
-  justify-content: space-between;
-	margin: 10px 0px;
-}*/
 .col {
 	flex-basis: 50%;
 }
-/*.col {
-	flex-grow: 1;
-}*/
-/*.col img {
-	width: 100%;
-}*/
 .separator {
 	margin: 20px 5px;
 }
@@ -68,9 +61,6 @@ a {
 h1 {
 	margin: 15px 0px;
 }
-/*h1, p {
-	margin: 15px 0px;
-}*/
 
 /*** HEADER ***/
 
