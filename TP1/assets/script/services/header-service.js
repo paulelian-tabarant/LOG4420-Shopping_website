@@ -4,9 +4,9 @@ const panier = {
 	products: [],
 	init: function() {
 		if(typeof localStorage!='undefined') {
-			let data_json = localStorage.getItem('products');
-			let data = JSON.parse(data_json);
-			this.products = data;
+			// let data_json = localStorage.getItem('products');
+			// let data = JSON.parse(data_json);
+			// this.products = data;
 		}
 	},
 	save: function() {
