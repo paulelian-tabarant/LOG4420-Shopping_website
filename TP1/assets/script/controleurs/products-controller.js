@@ -1,7 +1,17 @@
-function displayProductsBy(order) {
+let curDisplayedCategory = productsList.ALL, 
+    curSortingCriterion = productsList.PRICE_LH;
+
+function displayProductsBy(order, category) {
+    curSortingCriterion = order;
+    curDisplayedCategory = category;
     let $productsDiv = $("#products-list").empty();
-    $.map(productsList.getSortedBy(order), function (product, i) {
-        let $productHtml = $(`<a id=${product.id}></a>`);
+    let $productsNb = $("#products-count");
+
+    // refreshing products list with new criteria
+    productsList.sortBy(curSortingCriterion);
+    let productsToDisplay = productsList.getOnly(curDisplayedCategory);
+    $.map(productsToDisplay ,function (product, i) {
+        let $productHtml = $(`<a id="${product.id}" href="./product.html?id=#${product.id}"></a>`);
         let $productSection = $("<section class='product default-border'></section>");
         let priceStr = String(product.price).replace('.', ','); 
         $productSection.append(`<h2>${product.name}</h2>`)
@@ -10,6 +20,9 @@ function displayProductsBy(order) {
         $productHtml.append($productSection);
         $productsDiv.append($productHtml);
     });
+    
+    // refreshing text hint for the number of products found
+    $productsNb.text(`${productsToDisplay.length} produits`);
 }
 
 function setAsSelected($btnGroup, index) {
@@ -25,13 +38,22 @@ productsList.load();
 // Page is now loaded, do things on the DOM
 $(function () {
     // DOM objects
-    let sortingButtons = $("#product-criteria > button");
+    let $sortingButtons = $("#product-criteria > button");
+    let $categoryButtons = $("#product-categories > button");
 
     // Rendering
-    $.each(sortingButtons,
+    $.each($categoryButtons,
+        (i, button) => {
+            $(button).click( () => {
+                displayProductsBy(curSortingCriterion, i);
+                setAsSelected($("#product-categories"), i);
+            });
+        }
+    );
+    $.each($sortingButtons,
         (i, button) => {
             $(button).click( () => { 
-                displayProductsBy(i) 
+                displayProductsBy(i, curDisplayedCategory); 
                 setAsSelected($("#product-criteria"), i);
             } );
         }

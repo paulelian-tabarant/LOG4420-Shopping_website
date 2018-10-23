@@ -1,10 +1,20 @@
 const productsList = {
     content: [],
+    // sorting criteria
     PRICE_LH : 0,
     PRICE_HL : 1,
     NAME_AZ : 2,
     NAME_ZA : 3,
+    // product categories
+    CAMERAS: 0,
+    CONSOLES: 1,
+    SCREENS: 2,
+    COMPUTERS: 3,
+    ALL: 4,
+    // current display state
+    curOrder: this.PRICE_LH,
 
+    // object methods
     load: function() {
         console.log(this);
         $.getJSON("data/products.json",
@@ -17,7 +27,15 @@ const productsList = {
         );
     },
 
-    getSortedBy: function(criterion) {
+    getContent: function() {
+        return this.content.slice();
+    },
+    
+    getCurOrder: function() {
+        return this.curOrder;
+    },
+
+    sortBy: function(criterion) {
         // sort by price (ascending or descending)
         if(criterion === this.PRICE_LH) { 
             this.content.sort( 
@@ -40,7 +58,30 @@ const productsList = {
                 (p1, p2) => { return p2.name.localeCompare(p1.name); }
             )
         }
-        // just returning a copy of local content
-        return this.content.slice();
-    }
+    },
+
+    getOnly: function(category) {
+        if(category === this.CAMERAS) {
+            return $.grep(this.content, (p) => { 
+                return p.category === "cameras"; 
+            });
+        }
+        else if(category === this.CONSOLES) {
+            return $.grep(this.content, (p) => { 
+                return p.category === "consoles"; 
+            });
+        }
+        else if(category === this.SCREENS) {
+            return $.grep(this.content, (p) => { 
+                return p.category === "screens"; 
+            });
+        }
+        else if(category === this.COMPUTERS) {
+            return $.grep(this.content, (p) => { 
+                return p.category === "computers"; 
+            });
+        }
+        else
+            return this.content.slice();
+    },
 };

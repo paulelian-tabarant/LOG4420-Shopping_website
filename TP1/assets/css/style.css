@@ -170,9 +170,6 @@ footer {
 #products-header {
 	align-items: center;
 }
-#products-list {
-	align-content: space-around;
-}
 #products-list > a {
 	display: block;
 	flex-basis: 31%;
