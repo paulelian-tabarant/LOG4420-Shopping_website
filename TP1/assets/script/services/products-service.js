@@ -16,7 +16,6 @@ const productsList = {
 
     // object methods
     load: function() {
-        console.log(this);
         $.getJSON("data/products.json",
             (data) => {
                 // getting all products and storing them into 'content' array
