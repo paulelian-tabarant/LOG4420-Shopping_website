@@ -40,7 +40,9 @@ const product = {
             }
         });
     },
-    
+    getId: function() {
+        return this.id;
+    },
     getName: function() {
         return this.name;
     },

@@ -17,6 +17,8 @@ $(function() {
     $description = $("#product-desc");
     $features = $("#product-features");
     $price = $("#product-price");
+    $addToCartBtn = $("#add-to-cart-form > button");
+    $quantity = $("#add-to-cart-form input[name='quantite']");
 
     // Getting data and loading content into the html structure
     $notFound.hide();
@@ -28,4 +30,9 @@ $(function() {
         $features.append(`<li>${feature}</li>`); 
     });
     $price.text(product.getPrice());
+    $addToCartBtn.click((e) => {
+        e.preventDefault();
+        let nb = Number($quantity.val());
+        panier.add(product, nb);
+    });
 });
