@@ -10,6 +10,7 @@ $.urlParam = function(name) {
 const product = {
     // Attributes
     id: Number($.urlParam("id").replace('#', '')),
+    found: false,
     name: "",
     image: "",
     description: "",
@@ -18,6 +19,7 @@ const product = {
 
     // Methods
     load: function() {
+        this.found = false;
         $.getJSON( "data/products.json", ( products ) => {
             $.each( products, (i, product) => {
                 if(product.id === this.id) {
@@ -26,10 +28,16 @@ const product = {
                     this.description = product.description;
                     this.price = product.price;
                     this.features = product.features;
-                    // breaks 'each' loop
-                    return false;
+                    this.found = true;
                 }
             });
+            // notify controller here if found == false
+            if(!this.found) {
+                // must wait for the DOM to be loaded before
+                $(function (){
+                    productNotFound();
+                });
+            }
         });
     },
     
