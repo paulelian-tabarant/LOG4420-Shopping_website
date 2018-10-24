@@ -4,14 +4,16 @@ const panier = {
 	products: [],
 	init: function() {
 		if(typeof localStorage!='undefined') {
-			// let data_json = localStorage.getItem('products');
-			// let data = JSON.parse(data_json);
-			// this.products = data;
+			let dataString = localStorage.getItem('cart');
+			if(dataString != null) {
+				let data = JSON.parse(dataString);
+				this.products = data;
+			}
 		}
 	},
 	save: function() {
 		let data = JSON.stringify(this.products);
-		localStorage.setItem('products', data);
+		localStorage.setItem('cart', data);
 	},
 
 	find: function(product) {
@@ -31,10 +33,14 @@ const panier = {
 				number: number });
 		else
 			this.products[index].number += number;
-		//this.save();
+		refreshCart();
 	},
 	count: function() {
-		return this.products.length;
+		let n = 0;
+		$.each(this.products, (i, curProduct) => {
+			n += curProduct.number;
+		});
+		return n;
 	},
 	clear: function() {
 		this.products = [];

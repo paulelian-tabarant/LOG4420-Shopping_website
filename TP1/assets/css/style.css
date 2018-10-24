@@ -230,6 +230,17 @@ footer {
 #contact-options span {
 	font-size: 5em;
 }
+.dialog-box {
+	display: -block;
+	width: 33%;
+	background-color: black;
+	color: white;
+	text-align: center;
+	border-radius: 5px;
+	padding: 10px;
+	margin: auto;
+	margin-bottom: 10px;
+}
 
 /*** SHOPPING CART ***/
 

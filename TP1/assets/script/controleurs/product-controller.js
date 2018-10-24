@@ -19,9 +19,9 @@ $(function() {
     $price = $("#product-price");
     $addToCartBtn = $("#add-to-cart-form > button");
     $quantity = $("#add-to-cart-form input[name='quantite']");
+    $cartDialog = $("#dialog");
 
     // Getting data and loading content into the html structure
-    $notFound.hide();
     $main.show();
     $name.text(product.getName());
     $image.attr("src", product.getImage());
@@ -31,8 +31,17 @@ $(function() {
     });
     $price.text(product.getPrice());
     $addToCartBtn.click((e) => {
+        // in order to prevent sending URL request
         e.preventDefault();
         let nb = Number($quantity.val());
-        panier.add(product, nb);
+        // if '0' quantity specified, nothing special to do
+        if(nb) { 
+            panier.add(product, nb);
+            $cartDialog.show("fast", () => {
+                setTimeout(() => {
+                    $cartDialog.hide();
+                }, 5000);
+            });
+        }
     });
 });
