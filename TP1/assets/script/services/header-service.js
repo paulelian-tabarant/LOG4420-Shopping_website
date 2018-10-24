@@ -2,6 +2,7 @@
 
 const panier = {
 	products: [],
+	// gets cart content from local storage if available
 	init: function() {
 		if(typeof localStorage!='undefined') {
 			let dataString = localStorage.getItem('cart');
@@ -11,6 +12,7 @@ const panier = {
 			}
 		}
 	},
+	// writes cart content into local storage
 	save: function() {
 		let data = JSON.stringify(this.products);
 		localStorage.setItem('cart', data);
@@ -33,6 +35,7 @@ const panier = {
 				number: number });
 		else
 			this.products[index].number += number;
+		this.save();
 		refreshCart();
 	},
 	count: function() {

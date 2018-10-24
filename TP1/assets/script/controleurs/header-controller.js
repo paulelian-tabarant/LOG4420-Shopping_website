@@ -10,9 +10,6 @@ function refreshCart() {
 }
 
 panier.init();
-window.addEventListener('beforeunload', () => {
-	panier.save();
-});
 
 // When DOM is loaded
 $(document).ready(function() {
