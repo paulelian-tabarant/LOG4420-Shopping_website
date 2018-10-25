@@ -53,7 +53,7 @@ const product = {
         return this.description;
     },
     getPrice: function() {
-        return String(this.price).replace('.', ',');
+        return product.price;
     },
     getFeatures: function() {
         return this.features;

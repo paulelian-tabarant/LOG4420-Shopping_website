@@ -47,36 +47,16 @@
 						</tr>
 					</thead>
 					<tbody class="array-border">
-						<tr>
-							<td><button><i class="fas fa-times"></i></button></td>
-							<td><a href="product.html">Manette Xbox 360</a></td>
-							<td>29.99 $</td>
-							<td><button><i class="fas fa-minus"></i></button><span>2</span><button class="plus"><i class="fas fa-plus"></i></button></td>
-							<td>59.98 $</td>
-						</tr>
-						<tr>
-							<td><button><i class="fas fa-times"></i></button></td>
-							<td><a href="product.html">Console Xbox One</a></td>
-							<td>399.99 $</td>
-							<td><button><i class="fas fa-minus"></i></button><span>1</span><button class="plus"><i class="fas fa-plus"></i></button></td>
-							<td>399.99 $</td>
-						</tr>
-						<tr>
-							<td><button><i class="fas fa-times"></i></button></td>
-							<td><a href="product.html">Portable professionnel</a></td>
-							<td>559.99 $</td>
-							<td><button><i class="fas fa-minus"></i></button><span>1</span><button class="plus"><i class="fas fa-plus"></i></button></td>
-							<td>559.99 $</td>
-						</tr>
+						<!-- Insert cart content here -->
 					</tbody>
 				</table>
-				<p id="total">Total : 1019.96 $</p>
+				<p>Total : <span id="total-amount" class="bold"></span></p>
 				<div class="flex">
-					<button class="bouton">Vider le panier</button>
+					<button id="remove-all-items-button" class="bouton">Vider le panier</button>
 					<a class="bouton" href="order.html">Commander</a>
 				</div>
 			</div>
-			<p id="no-product-in-cart" hidden>Aucun produit dans le panier.</p>
+			<p id="no-item-in-cart" hidden>Aucun produit dans le panier.</p>
 		</main>
 		<div class="push"></div>
 	</div>

@@ -36,6 +36,9 @@ button {
 a {
 	text-decoration: none;
 }
+.bold {
+	font-weight: bold;
+}
 .bouton {
 	color: white;
 	padding: 0.5em;
@@ -268,7 +271,7 @@ tbody button {
 	background-color: #dddddd;
 	margin-right: 1em;
 }
-tbody button.plus {
+tbody button.add-quantity-button {
 	margin-right: 0;
 	margin-left: 1em;
 }
@@ -284,6 +287,9 @@ tbody button:hover {
 }
 button .bouton {
 	cursor: pointer;
+}
+.array-container > p {
+	text-align: right;
 }
 
 /*** ORDER ***/

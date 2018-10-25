@@ -29,7 +29,7 @@ $(function() {
     $.each(product.getFeatures(), (i, feature) => { 
         $features.append(`<li>${feature}</li>`); 
     });
-    $price.text(product.getPrice());
+    $price.text(formatPrice(product.getPrice()));
     $addToCartBtn.click((e) => {
         // in order to prevent sending URL request
         e.preventDefault();

@@ -13,10 +13,10 @@ function displayProductsBy(order, category) {
     $.map(productsToDisplay ,function (product, i) {
         let $productHtml = $(`<a id="${product.id}" href="./product.html?id=#${product.id}"></a>`);
         let $productSection = $("<section class='product default-border'></section>");
-        let priceStr = String(product.price).replace('.', ','); 
+        let priceStr = formatPrice(product.price); 
         $productSection.append(`<h2>${product.name}</h2>`)
             .append(`<img alt=${product.name} src=${`./assets/img/${product.image}`}></img>`)
-            .append(`<p>${priceStr} $</p>`);
+            .append(`<p>${priceStr}</p>`);
         $productHtml.append($productSection);
         $productsDiv.append($productHtml);
     });
