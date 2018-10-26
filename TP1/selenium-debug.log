@@ -1,0 +1,1553 @@
+14:41:10.713 INFO - Selenium build info: version: '3.4.0', revision: 'unknown'
+14:41:10.713 INFO - Launching a standalone Selenium Server
+2018-10-26 14:41:10.731:INFO::main: Logging initialized @228ms to org.seleniumhq.jetty9.util.log.StdErrLog
+14:41:10.774 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+ registration capabilities Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}] does not match the current platform LINUX
+14:41:10.774 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
+ registration capabilities Capabilities [{browserName=MicrosoftEdge, version=, platform=WINDOWS}] does not match the current platform LINUX
+14:41:10.775 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+14:41:10.775 INFO - Driver provider com.opera.core.systems.OperaDriver registration is skipped:
+Unable to create new instances on this machine.
+14:41:10.775 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+14:41:10.775 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+14:41:10.776 INFO - Driver provider org.openqa.selenium.safari.SafariDriver registration is skipped:
+ registration capabilities Capabilities [{browserName=safari, version=, platform=MAC}] does not match the current platform LINUX
+2018-10-26 14:41:10.811:INFO:osjs.Server:main: jetty-9.4.3.v20170317
+2018-10-26 14:41:10.843:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@475530b9{/,null,AVAILABLE}
+2018-10-26 14:41:10.856:INFO:osjs.AbstractConnector:main: Started ServerConnector@548e7350{HTTP/1.1,[http/1.1]}{0.0.0.0:4444}
+2018-10-26 14:41:10.857:INFO:osjs.Server:main: Started @354ms
+14:41:10.857 INFO - Selenium Server is up and running
+14:41:11.079 INFO - SessionCleaner initialized with insideBrowserTimeout 0 and clientGoneTimeout 1800000 polling every 180000
+14:41:11.100 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, marionette=true, name=1 Products, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
+14:41:11.119 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, marionette=true, name=1 Products, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351) on port 23405
+Only local connections are allowed.
+14:41:13.058 INFO - Detected dialect: OSS
+14:41:13.082 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, marionette=true, name=1 Products, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
+14:41:13.100 INFO - Executing: [get: http://localhost:8000/products.html])
+14:41:13.875 INFO - Done: [get: http://localhost:8000/products.html]
+14:41:13.885 INFO - Executing: [find elements: By.cssSelector: #products-list])
+14:41:13.925 INFO - Done: [find elements: By.cssSelector: #products-list]
+14:41:14.089 INFO - Executing: [find element: By.cssSelector: #products-count])
+14:41:14.106 INFO - Done: [find element: By.cssSelector: #products-count]
+14:41:14.109 INFO - Executing: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]])
+14:41:14.128 INFO - Done: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]]
+14:41:14.133 INFO - Executing: [find elements: By.cssSelector: #products-list > *])
+14:41:14.152 INFO - Done: [find elements: By.cssSelector: #products-list > *]
+14:41:14.157 INFO - Executing: [is displayed: 2 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-list > *]])
+14:41:14.172 INFO - Done: [is displayed: 2 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-list > *]]
+14:41:14.175 INFO - Executing: [get text: 2 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-list > *]])
+14:41:14.196 INFO - Done: [get text: 2 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-list > *]]
+14:41:14.201 INFO - Executing: [find child element: 2 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-list > *], By.cssSelector: img])
+14:41:14.221 INFO - Done: [find child element: 2 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-list > *], By.cssSelector: img]
+14:41:14.225 INFO - Executing: [get element attribute: 15 [[[[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-list > *]] -> css selector: img], src])
+14:41:14.231 INFO - Done: [get element attribute: 15 [[[[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-list > *]] -> css selector: img], src]
+14:41:14.235 INFO - Executing: [tag name: 2 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-list > *]])
+14:41:14.240 INFO - Done: [tag name: 2 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-list > *]]
+14:41:14.243 INFO - Executing: [get element attribute: 2 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-list > *], href])
+14:41:14.249 INFO - Done: [get element attribute: 2 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-list > *], href]
+14:41:14.257 INFO - Executing: [find elements: By.cssSelector: #product-categories])
+14:41:14.275 INFO - Done: [find elements: By.cssSelector: #product-categories]
+14:41:14.278 INFO - Executing: [find elements: By.cssSelector: #product-categories > button])
+14:41:14.292 INFO - Done: [find elements: By.cssSelector: #product-categories > button]
+14:41:14.301 INFO - Executing: [get text: 17 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #product-categories > button]])
+14:41:14.318 INFO - Done: [get text: 17 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #product-categories > button]]
+14:41:14.321 INFO - Executing: [click: 17 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #product-categories > button]])
+14:41:14.374 INFO - Done: [click: 17 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #product-categories > button]]
+14:41:14.528 INFO - Executing: [get value of css property: 17 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #product-categories > button], selected])
+14:41:14.541 INFO - Done: [get value of css property: 17 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #product-categories > button], selected]
+14:41:14.545 INFO - Executing: [find elements: By.cssSelector: #product-categories > button:not(.selected)])
+14:41:14.564 INFO - Done: [find elements: By.cssSelector: #product-categories > button:not(.selected)]
+14:41:14.573 INFO - Executing: [find element: By.cssSelector: #products-count])
+14:41:14.585 INFO - Done: [find element: By.cssSelector: #products-count]
+14:41:14.589 INFO - Executing: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]])
+14:41:14.600 INFO - Done: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]]
+14:41:14.603 INFO - Executing: [find elements: By.cssSelector: #products-list > *])
+14:41:14.613 INFO - Done: [find elements: By.cssSelector: #products-list > *]
+14:41:14.617 INFO - Executing: [is displayed: 22 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-list > *]])
+14:41:14.634 INFO - Done: [is displayed: 22 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-list > *]]
+14:41:14.638 INFO - Executing: [get text: 22 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-list > *]])
+14:41:14.658 INFO - Done: [get text: 22 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-list > *]]
+14:41:14.662 INFO - Executing: [find child element: 22 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-list > *], By.cssSelector: img])
+14:41:14.680 INFO - Done: [find child element: 22 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-list > *], By.cssSelector: img]
+14:41:14.683 INFO - Executing: [get element attribute: 25 [[[[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-list > *]] -> css selector: img], src])
+14:41:14.692 INFO - Done: [get element attribute: 25 [[[[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-list > *]] -> css selector: img], src]
+14:41:14.697 INFO - Executing: [tag name: 22 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-list > *]])
+14:41:14.704 INFO - Done: [tag name: 22 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-list > *]]
+14:41:14.707 INFO - Executing: [get element attribute: 22 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-list > *], href])
+14:41:14.725 INFO - Done: [get element attribute: 22 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-list > *], href]
+14:41:14.730 INFO - Executing: [find elements: By.cssSelector: #product-criteria])
+14:41:14.744 INFO - Done: [find elements: By.cssSelector: #product-criteria]
+14:41:14.748 INFO - Executing: [find elements: By.cssSelector: #product-criteria > button])
+14:41:14.774 INFO - Done: [find elements: By.cssSelector: #product-criteria > button]
+14:41:14.779 INFO - Executing: [get text: 27 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #product-criteria > button]])
+14:41:14.797 INFO - Done: [get text: 27 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #product-criteria > button]]
+14:41:14.802 INFO - Executing: [click: 27 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #product-criteria > button]])
+14:41:14.855 INFO - Done: [click: 27 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #product-criteria > button]]
+14:41:15.010 INFO - Executing: [get value of css property: 27 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #product-criteria > button], selected])
+14:41:15.027 INFO - Done: [get value of css property: 27 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #product-criteria > button], selected]
+14:41:15.034 INFO - Executing: [find elements: By.cssSelector: #product-criteria > button:not(.selected)])
+14:41:15.053 INFO - Done: [find elements: By.cssSelector: #product-criteria > button:not(.selected)]
+14:41:15.058 INFO - Executing: [find element: By.cssSelector: #products-count])
+14:41:15.071 INFO - Done: [find element: By.cssSelector: #products-count]
+14:41:15.074 INFO - Executing: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]])
+14:41:15.084 INFO - Done: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]]
+14:41:15.190 INFO - Executing: [find element: By.cssSelector: #products-count])
+14:41:15.205 INFO - Done: [find element: By.cssSelector: #products-count]
+14:41:15.207 INFO - Executing: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]])
+14:41:15.217 INFO - Done: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]]
+14:41:15.323 INFO - Executing: [find element: By.cssSelector: #products-count])
+14:41:15.337 INFO - Done: [find element: By.cssSelector: #products-count]
+14:41:15.340 INFO - Executing: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]])
+14:41:15.348 INFO - Done: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]]
+14:41:15.455 INFO - Executing: [find element: By.cssSelector: #products-count])
+14:41:15.467 INFO - Done: [find element: By.cssSelector: #products-count]
+14:41:15.469 INFO - Executing: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]])
+14:41:15.479 INFO - Done: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]]
+14:41:15.585 INFO - Executing: [find element: By.cssSelector: #products-count])
+14:41:15.600 INFO - Done: [find element: By.cssSelector: #products-count]
+14:41:15.603 INFO - Executing: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]])
+14:41:15.614 INFO - Done: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]]
+14:41:15.721 INFO - Executing: [find element: By.cssSelector: #products-count])
+14:41:15.736 INFO - Done: [find element: By.cssSelector: #products-count]
+14:41:15.738 INFO - Executing: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]])
+14:41:15.747 INFO - Done: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]]
+14:41:15.853 INFO - Executing: [find element: By.cssSelector: #products-count])
+14:41:15.870 INFO - Done: [find element: By.cssSelector: #products-count]
+14:41:15.872 INFO - Executing: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]])
+14:41:15.883 INFO - Done: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]]
+14:41:15.989 INFO - Executing: [find element: By.cssSelector: #products-count])
+14:41:16.001 INFO - Done: [find element: By.cssSelector: #products-count]
+14:41:16.004 INFO - Executing: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]])
+14:41:16.015 INFO - Done: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]]
+14:41:16.122 INFO - Executing: [find element: By.cssSelector: #products-count])
+14:41:16.133 INFO - Done: [find element: By.cssSelector: #products-count]
+14:41:16.136 INFO - Executing: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]])
+14:41:16.146 INFO - Done: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]]
+14:41:16.253 INFO - Executing: [find element: By.cssSelector: #products-count])
+14:41:16.264 INFO - Done: [find element: By.cssSelector: #products-count]
+14:41:16.267 INFO - Executing: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]])
+14:41:16.275 INFO - Done: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]]
+14:41:16.378 INFO - Executing: [find element: By.cssSelector: #products-count])
+14:41:16.389 INFO - Done: [find element: By.cssSelector: #products-count]
+14:41:16.392 INFO - Executing: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]])
+14:41:16.403 INFO - Done: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]]
+14:41:16.506 INFO - Executing: [find element: By.cssSelector: #products-count])
+14:41:16.521 INFO - Done: [find element: By.cssSelector: #products-count]
+14:41:16.524 INFO - Executing: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]])
+14:41:16.533 INFO - Done: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]]
+14:41:16.640 INFO - Executing: [find element: By.cssSelector: #products-count])
+14:41:16.654 INFO - Done: [find element: By.cssSelector: #products-count]
+14:41:16.657 INFO - Executing: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]])
+14:41:16.665 INFO - Done: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]]
+14:41:16.770 INFO - Executing: [find element: By.cssSelector: #products-count])
+14:41:16.785 INFO - Done: [find element: By.cssSelector: #products-count]
+14:41:16.787 INFO - Executing: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]])
+14:41:16.796 INFO - Done: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]]
+14:41:16.904 INFO - Executing: [find element: By.cssSelector: #products-count])
+14:41:16.915 INFO - Done: [find element: By.cssSelector: #products-count]
+14:41:16.919 INFO - Executing: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]])
+14:41:16.931 INFO - Done: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]]
+14:41:17.035 INFO - Executing: [find element: By.cssSelector: #products-count])
+14:41:17.049 INFO - Done: [find element: By.cssSelector: #products-count]
+14:41:17.051 INFO - Executing: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]])
+14:41:17.060 INFO - Done: [get text: 1 [[ChromeDriver: chrome on LINUX (7320f6b55389a42d106e4df40aa5c104)] -> css selector: #products-count]]
+14:41:17.111 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, marionette=true, name=2 Product, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
+14:41:17.112 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, marionette=true, name=2 Product, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351) on port 27172
+Only local connections are allowed.
+14:41:17.854 INFO - Detected dialect: OSS
+14:41:17.856 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, marionette=true, name=2 Product, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
+14:41:17.859 INFO - Executing: [get: http://localhost:8000/product.html?id=3])
+14:41:18.463 INFO - Done: [get: http://localhost:8000/product.html?id=3]
+14:41:18.624 INFO - Executing: [find element: By.cssSelector: #product-name])
+14:41:18.644 INFO - Done: [find element: By.cssSelector: #product-name]
+14:41:18.646 INFO - Executing: [get text: 0 [[ChromeDriver: chrome on LINUX (8e3561ef1484a7f757533216e2445f5a)] -> css selector: #product-name]])
+14:41:18.663 INFO - Done: [get text: 0 [[ChromeDriver: chrome on LINUX (8e3561ef1484a7f757533216e2445f5a)] -> css selector: #product-name]]
+14:41:18.666 INFO - Executing: [find element: By.cssSelector: #product-image])
+14:41:18.683 INFO - Done: [find element: By.cssSelector: #product-image]
+14:41:18.685 INFO - Executing: [get element attribute: 1 [[ChromeDriver: chrome on LINUX (8e3561ef1484a7f757533216e2445f5a)] -> css selector: #product-image], src])
+14:41:18.691 INFO - Done: [get element attribute: 1 [[ChromeDriver: chrome on LINUX (8e3561ef1484a7f757533216e2445f5a)] -> css selector: #product-image], src]
+14:41:18.696 INFO - Executing: [find element: By.cssSelector: #product-desc])
+14:41:18.712 INFO - Done: [find element: By.cssSelector: #product-desc]
+14:41:18.717 INFO - Executing: [get text: 2 [[ChromeDriver: chrome on LINUX (8e3561ef1484a7f757533216e2445f5a)] -> css selector: #product-desc]])
+14:41:18.735 INFO - Done: [get text: 2 [[ChromeDriver: chrome on LINUX (8e3561ef1484a7f757533216e2445f5a)] -> css selector: #product-desc]]
+14:41:18.739 INFO - Executing: [find elements: By.cssSelector: #product-features > li])
+14:41:18.757 INFO - Done: [find elements: By.cssSelector: #product-features > li]
+14:41:18.761 INFO - Executing: [get text: 3 [[ChromeDriver: chrome on LINUX (8e3561ef1484a7f757533216e2445f5a)] -> css selector: #product-features > li]])
+14:41:18.778 INFO - Done: [get text: 3 [[ChromeDriver: chrome on LINUX (8e3561ef1484a7f757533216e2445f5a)] -> css selector: #product-features > li]]
+14:41:18.781 INFO - Executing: [get text: 4 [[ChromeDriver: chrome on LINUX (8e3561ef1484a7f757533216e2445f5a)] -> css selector: #product-features > li]])
+14:41:18.803 INFO - Done: [get text: 4 [[ChromeDriver: chrome on LINUX (8e3561ef1484a7f757533216e2445f5a)] -> css selector: #product-features > li]]
+14:41:18.806 INFO - Executing: [get text: 5 [[ChromeDriver: chrome on LINUX (8e3561ef1484a7f757533216e2445f5a)] -> css selector: #product-features > li]])
+14:41:18.822 INFO - Done: [get text: 5 [[ChromeDriver: chrome on LINUX (8e3561ef1484a7f757533216e2445f5a)] -> css selector: #product-features > li]]
+14:41:18.824 INFO - Executing: [get text: 6 [[ChromeDriver: chrome on LINUX (8e3561ef1484a7f757533216e2445f5a)] -> css selector: #product-features > li]])
+14:41:18.841 INFO - Done: [get text: 6 [[ChromeDriver: chrome on LINUX (8e3561ef1484a7f757533216e2445f5a)] -> css selector: #product-features > li]]
+14:41:18.844 INFO - Executing: [get text: 7 [[ChromeDriver: chrome on LINUX (8e3561ef1484a7f757533216e2445f5a)] -> css selector: #product-features > li]])
+14:41:18.861 INFO - Done: [get text: 7 [[ChromeDriver: chrome on LINUX (8e3561ef1484a7f757533216e2445f5a)] -> css selector: #product-features > li]]
+14:41:18.864 INFO - Executing: [find element: By.cssSelector: #product-price])
+14:41:18.881 INFO - Done: [find element: By.cssSelector: #product-price]
+14:41:18.883 INFO - Executing: [get text: 8 [[ChromeDriver: chrome on LINUX (8e3561ef1484a7f757533216e2445f5a)] -> css selector: #product-price]])
+14:41:18.900 INFO - Done: [get text: 8 [[ChromeDriver: chrome on LINUX (8e3561ef1484a7f757533216e2445f5a)] -> css selector: #product-price]]
+14:41:18.904 INFO - Executing: [get: http://localhost:8000/product.html?id=539])
+14:41:19.019 INFO - Done: [get: http://localhost:8000/product.html?id=539]
+14:41:19.176 INFO - Executing: [find element: By.cssSelector: h1])
+14:41:19.194 INFO - Done: [find element: By.cssSelector: h1]
+14:41:19.196 INFO - Executing: [get text: 9 [[ChromeDriver: chrome on LINUX (8e3561ef1484a7f757533216e2445f5a)] -> css selector: h1]])
+14:41:19.211 INFO - Done: [get text: 9 [[ChromeDriver: chrome on LINUX (8e3561ef1484a7f757533216e2445f5a)] -> css selector: h1]]
+14:41:19.221 INFO - Executing: [get: http://localhost:8000/product.html?id=6])
+14:41:19.324 INFO - Done: [get: http://localhost:8000/product.html?id=6]
+14:41:19.482 INFO - Executing: [find element: By.cssSelector: .shopping-cart > .count])
+14:41:19.499 INFO - Done: [find element: By.cssSelector: .shopping-cart > .count]
+14:41:19.502 INFO - Executing: [is displayed: 10 [[ChromeDriver: chrome on LINUX (8e3561ef1484a7f757533216e2445f5a)] -> css selector: .shopping-cart > .count]])
+14:41:19.516 INFO - Done: [is displayed: 10 [[ChromeDriver: chrome on LINUX (8e3561ef1484a7f757533216e2445f5a)] -> css selector: .shopping-cart > .count]]
+14:41:19.520 INFO - Executing: [find element: By.cssSelector: #dialog])
+14:41:19.535 INFO - Done: [find element: By.cssSelector: #dialog]
+14:41:19.537 INFO - Executing: [is displayed: 11 [[ChromeDriver: chrome on LINUX (8e3561ef1484a7f757533216e2445f5a)] -> css selector: #dialog]])
+14:41:19.549 INFO - Done: [is displayed: 11 [[ChromeDriver: chrome on LINUX (8e3561ef1484a7f757533216e2445f5a)] -> css selector: #dialog]]
+14:41:19.553 INFO - Executing: [find elements: By.cssSelector: #add-to-cart-form])
+14:41:19.568 INFO - Done: [find elements: By.cssSelector: #add-to-cart-form]
+14:41:19.571 INFO - Executing: [find element: By.cssSelector: #add-to-cart-form input])
+14:41:19.588 INFO - Done: [find element: By.cssSelector: #add-to-cart-form input]
+14:41:19.591 INFO - Executing: [clear: 13 [[ChromeDriver: chrome on LINUX (8e3561ef1484a7f757533216e2445f5a)] -> css selector: #add-to-cart-form input]])
+14:41:20.308 WARN - Exception thrown
+org.openqa.selenium.WebDriverException: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 26 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.2x6fnQ}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8e3561ef1484a7f757533216e2445f5a
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:114)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:332)
+	at com.sun.proxy.$Proxy5.clear(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.clear(EventFiringWebDriver.java:361)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy6.clear(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.ClearElement.call(ClearElement.java:30)
+	at org.openqa.selenium.remote.server.handler.ClearElement.call(ClearElement.java:22)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+14:41:20.310 WARN - Exception: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 26 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.2x6fnQ}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8e3561ef1484a7f757533216e2445f5a
+14:41:20.364 INFO - Executing: [find element: By.cssSelector: #add-to-cart-form input])
+14:41:20.374 INFO - Done: [find element: By.cssSelector: #add-to-cart-form input]
+14:41:20.378 INFO - Executing: [send keys: 13 [[ChromeDriver: chrome on LINUX (8e3561ef1484a7f757533216e2445f5a)] -> css selector: #add-to-cart-form input], [2]])
+14:41:20.774 WARN - Exception thrown
+org.openqa.selenium.WebDriverException: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 29 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.2x6fnQ}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8e3561ef1484a7f757533216e2445f5a
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:332)
+	at com.sun.proxy.$Proxy5.sendKeys(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.sendKeys(EventFiringWebDriver.java:355)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy6.sendKeys(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.SendKeys.call(SendKeys.java:50)
+	at org.openqa.selenium.remote.server.handler.SendKeys.call(SendKeys.java:29)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+14:41:20.775 WARN - Exception: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 29 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.2x6fnQ}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8e3561ef1484a7f757533216e2445f5a
+14:41:20.813 INFO - Executing: [find element: By.cssSelector: #add-to-cart-form])
+14:41:20.833 INFO - Done: [find element: By.cssSelector: #add-to-cart-form]
+14:41:20.835 INFO - Executing: [submit: 12 [[ChromeDriver: chrome on LINUX (8e3561ef1484a7f757533216e2445f5a)] -> css selector: #add-to-cart-form]])
+14:41:21.210 WARN - Exception thrown
+org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 67 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.2x6fnQ}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8e3561ef1484a7f757533216e2445f5a
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.submit(RemoteWebElement.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:332)
+	at com.sun.proxy.$Proxy5.submit(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.submit(EventFiringWebDriver.java:350)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy6.submit(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.SubmitElement.call(SubmitElement.java:30)
+	at org.openqa.selenium.remote.server.handler.SubmitElement.call(SubmitElement.java:22)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+14:41:21.211 WARN - Exception: stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 67 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.2x6fnQ}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8e3561ef1484a7f757533216e2445f5a
+14:41:21.385 INFO - Executing: [find element: By.cssSelector: .shopping-cart > .count])
+14:41:21.397 INFO - Done: [find element: By.cssSelector: .shopping-cart > .count]
+14:41:21.399 INFO - Executing: [is displayed: 14 [[ChromeDriver: chrome on LINUX (8e3561ef1484a7f757533216e2445f5a)] -> css selector: .shopping-cart > .count]])
+14:41:21.412 INFO - Done: [is displayed: 14 [[ChromeDriver: chrome on LINUX (8e3561ef1484a7f757533216e2445f5a)] -> css selector: .shopping-cart > .count]]
+14:41:21.423 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, marionette=true, name=3 Shopping Cart, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
+14:41:21.424 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, marionette=true, name=3 Shopping Cart, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351) on port 14720
+Only local connections are allowed.
+14:41:22.165 INFO - Detected dialect: OSS
+14:41:22.168 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, marionette=true, name=3 Shopping Cart, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
+14:41:22.177 INFO - Executing: [get: http://localhost:8000/shopping-cart.html])
+14:41:23.350 INFO - Done: [get: http://localhost:8000/shopping-cart.html]
+14:41:23.508 INFO - Executing: [find element: By.cssSelector: h1])
+14:41:23.534 INFO - Done: [find element: By.cssSelector: h1]
+14:41:23.536 INFO - Executing: [get text: 0 [[ChromeDriver: chrome on LINUX (3aa0207df2d3fc716c3f13cb4e0ec9df)] -> css selector: h1]])
+14:41:23.553 INFO - Done: [get text: 0 [[ChromeDriver: chrome on LINUX (3aa0207df2d3fc716c3f13cb4e0ec9df)] -> css selector: h1]]
+14:41:23.556 INFO - Executing: [find element: By.cssSelector: h1 + *])
+14:41:23.576 INFO - Done: [find element: By.cssSelector: h1 + *]
+14:41:23.578 INFO - Executing: [get text: 1 [[ChromeDriver: chrome on LINUX (3aa0207df2d3fc716c3f13cb4e0ec9df)] -> css selector: h1 + *]])
+14:41:23.597 INFO - Done: [get text: 1 [[ChromeDriver: chrome on LINUX (3aa0207df2d3fc716c3f13cb4e0ec9df)] -> css selector: h1 + *]]
+14:41:23.601 INFO - Executing: [get: http://localhost:8000/product.html?id=1])
+14:41:23.721 INFO - Done: [get: http://localhost:8000/product.html?id=1]
+14:41:23.876 INFO - Executing: [find element: By.cssSelector: #add-to-cart-form input])
+14:41:23.896 INFO - Done: [find element: By.cssSelector: #add-to-cart-form input]
+14:41:23.898 INFO - Executing: [clear: 2 [[ChromeDriver: chrome on LINUX (3aa0207df2d3fc716c3f13cb4e0ec9df)] -> css selector: #add-to-cart-form input]])
+14:41:24.301 WARN - Exception thrown
+org.openqa.selenium.WebDriverException: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 23 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.PzL4Rs}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3aa0207df2d3fc716c3f13cb4e0ec9df
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:114)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:332)
+	at com.sun.proxy.$Proxy5.clear(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.clear(EventFiringWebDriver.java:361)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy6.clear(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.ClearElement.call(ClearElement.java:30)
+	at org.openqa.selenium.remote.server.handler.ClearElement.call(ClearElement.java:22)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+14:41:24.302 WARN - Exception: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 23 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.PzL4Rs}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3aa0207df2d3fc716c3f13cb4e0ec9df
+14:41:24.370 INFO - Executing: [find element: By.cssSelector: #add-to-cart-form input])
+14:41:24.380 INFO - Done: [find element: By.cssSelector: #add-to-cart-form input]
+14:41:24.382 INFO - Executing: [send keys: 2 [[ChromeDriver: chrome on LINUX (3aa0207df2d3fc716c3f13cb4e0ec9df)] -> css selector: #add-to-cart-form input], [1]])
+14:41:24.827 WARN - Exception thrown
+org.openqa.selenium.WebDriverException: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 29 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.PzL4Rs}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3aa0207df2d3fc716c3f13cb4e0ec9df
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:332)
+	at com.sun.proxy.$Proxy5.sendKeys(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.sendKeys(EventFiringWebDriver.java:355)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy6.sendKeys(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.SendKeys.call(SendKeys.java:50)
+	at org.openqa.selenium.remote.server.handler.SendKeys.call(SendKeys.java:29)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+14:41:24.827 WARN - Exception: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 29 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.PzL4Rs}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3aa0207df2d3fc716c3f13cb4e0ec9df
+14:41:24.858 INFO - Executing: [find element: By.cssSelector: #add-to-cart-form])
+14:41:24.873 INFO - Done: [find element: By.cssSelector: #add-to-cart-form]
+14:41:24.876 INFO - Executing: [submit: 3 [[ChromeDriver: chrome on LINUX (3aa0207df2d3fc716c3f13cb4e0ec9df)] -> css selector: #add-to-cart-form]])
+14:41:25.342 WARN - Exception thrown
+org.openqa.selenium.WebDriverException: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 70 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.PzL4Rs}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3aa0207df2d3fc716c3f13cb4e0ec9df
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.submit(RemoteWebElement.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:332)
+	at com.sun.proxy.$Proxy5.submit(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.submit(EventFiringWebDriver.java:350)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy6.submit(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.SubmitElement.call(SubmitElement.java:30)
+	at org.openqa.selenium.remote.server.handler.SubmitElement.call(SubmitElement.java:22)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+14:41:25.343 WARN - Exception: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 70 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.PzL4Rs}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3aa0207df2d3fc716c3f13cb4e0ec9df
+14:41:25.375 INFO - Executing: [get: http://localhost:8000/product.html?id=13])
+14:41:25.423 INFO - Done: [get: http://localhost:8000/product.html?id=13]
+14:41:25.581 INFO - Executing: [find element: By.cssSelector: #add-to-cart-form input])
+14:41:25.592 INFO - Done: [find element: By.cssSelector: #add-to-cart-form input]
+14:41:25.594 INFO - Executing: [clear: 4 [[ChromeDriver: chrome on LINUX (3aa0207df2d3fc716c3f13cb4e0ec9df)] -> css selector: #add-to-cart-form input]])
+14:41:25.947 WARN - Exception thrown
+org.openqa.selenium.WebDriverException: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 23 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.PzL4Rs}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3aa0207df2d3fc716c3f13cb4e0ec9df
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:114)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:332)
+	at com.sun.proxy.$Proxy5.clear(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.clear(EventFiringWebDriver.java:361)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy6.clear(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.ClearElement.call(ClearElement.java:30)
+	at org.openqa.selenium.remote.server.handler.ClearElement.call(ClearElement.java:22)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+14:41:25.947 WARN - Exception: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 23 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.PzL4Rs}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3aa0207df2d3fc716c3f13cb4e0ec9df
+14:41:25.978 INFO - Executing: [find element: By.cssSelector: #add-to-cart-form input])
+14:41:25.986 INFO - Done: [find element: By.cssSelector: #add-to-cart-form input]
+14:41:25.989 INFO - Executing: [send keys: 4 [[ChromeDriver: chrome on LINUX (3aa0207df2d3fc716c3f13cb4e0ec9df)] -> css selector: #add-to-cart-form input], [3]])
+14:41:26.360 WARN - Exception thrown
+org.openqa.selenium.WebDriverException: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 29 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.PzL4Rs}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3aa0207df2d3fc716c3f13cb4e0ec9df
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:332)
+	at com.sun.proxy.$Proxy5.sendKeys(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.sendKeys(EventFiringWebDriver.java:355)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy6.sendKeys(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.SendKeys.call(SendKeys.java:50)
+	at org.openqa.selenium.remote.server.handler.SendKeys.call(SendKeys.java:29)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+14:41:26.361 WARN - Exception: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 29 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.PzL4Rs}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3aa0207df2d3fc716c3f13cb4e0ec9df
+14:41:26.394 INFO - Executing: [find element: By.cssSelector: #add-to-cart-form])
+14:41:26.403 INFO - Done: [find element: By.cssSelector: #add-to-cart-form]
+14:41:26.405 INFO - Executing: [submit: 5 [[ChromeDriver: chrome on LINUX (3aa0207df2d3fc716c3f13cb4e0ec9df)] -> css selector: #add-to-cart-form]])
+14:41:26.783 WARN - Exception thrown
+org.openqa.selenium.WebDriverException: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 50 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.PzL4Rs}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3aa0207df2d3fc716c3f13cb4e0ec9df
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.submit(RemoteWebElement.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:332)
+	at com.sun.proxy.$Proxy5.submit(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.submit(EventFiringWebDriver.java:350)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy6.submit(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.SubmitElement.call(SubmitElement.java:30)
+	at org.openqa.selenium.remote.server.handler.SubmitElement.call(SubmitElement.java:22)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+14:41:26.784 WARN - Exception: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 50 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.PzL4Rs}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3aa0207df2d3fc716c3f13cb4e0ec9df
+14:41:26.814 INFO - Executing: [get: http://localhost:8000/product.html?id=3])
+14:41:26.878 INFO - Done: [get: http://localhost:8000/product.html?id=3]
+14:41:27.032 INFO - Executing: [find element: By.cssSelector: #add-to-cart-form input])
+14:41:27.040 INFO - Done: [find element: By.cssSelector: #add-to-cart-form input]
+14:41:27.042 INFO - Executing: [clear: 6 [[ChromeDriver: chrome on LINUX (3aa0207df2d3fc716c3f13cb4e0ec9df)] -> css selector: #add-to-cart-form input]])
+14:41:27.413 WARN - Exception thrown
+org.openqa.selenium.WebDriverException: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 21 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.PzL4Rs}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3aa0207df2d3fc716c3f13cb4e0ec9df
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:114)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:332)
+	at com.sun.proxy.$Proxy5.clear(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.clear(EventFiringWebDriver.java:361)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy6.clear(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.ClearElement.call(ClearElement.java:30)
+	at org.openqa.selenium.remote.server.handler.ClearElement.call(ClearElement.java:22)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+14:41:27.414 WARN - Exception: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 21 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.PzL4Rs}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3aa0207df2d3fc716c3f13cb4e0ec9df
+14:41:27.453 INFO - Executing: [find element: By.cssSelector: #add-to-cart-form input])
+14:41:27.460 INFO - Done: [find element: By.cssSelector: #add-to-cart-form input]
+14:41:27.463 INFO - Executing: [send keys: 6 [[ChromeDriver: chrome on LINUX (3aa0207df2d3fc716c3f13cb4e0ec9df)] -> css selector: #add-to-cart-form input], [2]])
+14:41:27.838 WARN - Exception thrown
+org.openqa.selenium.WebDriverException: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.PzL4Rs}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3aa0207df2d3fc716c3f13cb4e0ec9df
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:332)
+	at com.sun.proxy.$Proxy5.sendKeys(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.sendKeys(EventFiringWebDriver.java:355)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy6.sendKeys(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.SendKeys.call(SendKeys.java:50)
+	at org.openqa.selenium.remote.server.handler.SendKeys.call(SendKeys.java:29)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+14:41:27.838 WARN - Exception: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.PzL4Rs}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3aa0207df2d3fc716c3f13cb4e0ec9df
+14:41:27.878 INFO - Executing: [find element: By.cssSelector: #add-to-cart-form])
+14:41:27.888 INFO - Done: [find element: By.cssSelector: #add-to-cart-form]
+14:41:27.891 INFO - Executing: [submit: 7 [[ChromeDriver: chrome on LINUX (3aa0207df2d3fc716c3f13cb4e0ec9df)] -> css selector: #add-to-cart-form]])
+14:41:28.288 WARN - Exception thrown
+org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 57 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.PzL4Rs}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3aa0207df2d3fc716c3f13cb4e0ec9df
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.submit(RemoteWebElement.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:332)
+	at com.sun.proxy.$Proxy5.submit(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.submit(EventFiringWebDriver.java:350)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy6.submit(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.SubmitElement.call(SubmitElement.java:30)
+	at org.openqa.selenium.remote.server.handler.SubmitElement.call(SubmitElement.java:22)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+14:41:28.289 WARN - Exception: stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 57 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.PzL4Rs}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3aa0207df2d3fc716c3f13cb4e0ec9df
+14:41:28.329 INFO - Executing: [get: http://localhost:8000/shopping-cart.html])
+14:41:28.374 INFO - Done: [get: http://localhost:8000/shopping-cart.html]
+14:41:28.531 INFO - Executing: [find elements: By.cssSelector: table tr])
+14:41:28.549 INFO - Done: [find elements: By.cssSelector: table tr]
+14:41:28.552 INFO - Executing: [find element: By.cssSelector: .shopping-cart > .count])
+14:41:28.570 INFO - Done: [find element: By.cssSelector: .shopping-cart > .count]
+14:41:28.572 INFO - Executing: [is displayed: 9 [[ChromeDriver: chrome on LINUX (3aa0207df2d3fc716c3f13cb4e0ec9df)] -> css selector: .shopping-cart > .count]])
+14:41:28.586 INFO - Done: [is displayed: 9 [[ChromeDriver: chrome on LINUX (3aa0207df2d3fc716c3f13cb4e0ec9df)] -> css selector: .shopping-cart > .count]]
+14:41:28.592 INFO - Executing: [find element: By.cssSelector: .remove-item-button])
+14:41:28.902 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".remove-item-button"}
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.PzL4Rs}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3aa0207df2d3fc716c3f13cb4e0ec9df
+*** Element info: {Using=css selector, value=.remove-item-button}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:501)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at sun.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:104)
+	at com.sun.proxy.$Proxy4.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:48)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:33)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+14:41:28.903 WARN - Exception: no such element: Unable to locate element: {"method":"css selector","selector":".remove-item-button"}
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.PzL4Rs}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3aa0207df2d3fc716c3f13cb4e0ec9df
+*** Element info: {Using=css selector, value=.remove-item-button}
+14:41:28.919 INFO - Executing: [dismiss alert])
+14:41:28.926 WARN - Exception thrown
+org.openqa.selenium.NoAlertPresentException: no alert open
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.PzL4Rs}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3aa0207df2d3fc716c3f13cb4e0ec9df
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1020)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringTargetLocator.alert(EventFiringWebDriver.java:612)
+	at org.openqa.selenium.remote.server.handler.DismissAlert.call(DismissAlert.java:30)
+	at org.openqa.selenium.remote.server.handler.DismissAlert.call(DismissAlert.java:22)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+14:41:28.927 WARN - Exception: no alert open
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.PzL4Rs}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3aa0207df2d3fc716c3f13cb4e0ec9df
+14:41:29.087 INFO - Executing: [find elements: By.cssSelector: table tr])
+14:41:29.100 INFO - Done: [find elements: By.cssSelector: table tr]
+14:41:29.103 INFO - Executing: [find element: By.cssSelector: .shopping-cart > .count])
+14:41:29.112 INFO - Done: [find element: By.cssSelector: .shopping-cart > .count]
+14:41:29.114 INFO - Executing: [is displayed: 9 [[ChromeDriver: chrome on LINUX (3aa0207df2d3fc716c3f13cb4e0ec9df)] -> css selector: .shopping-cart > .count]])
+14:41:29.120 INFO - Done: [is displayed: 9 [[ChromeDriver: chrome on LINUX (3aa0207df2d3fc716c3f13cb4e0ec9df)] -> css selector: .shopping-cart > .count]]
+14:41:29.128 INFO - Executing: [find element: By.cssSelector: .add-quantity-button])
+14:41:29.443 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".add-quantity-button"}
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.PzL4Rs}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3aa0207df2d3fc716c3f13cb4e0ec9df
+*** Element info: {Using=css selector, value=.add-quantity-button}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:501)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at sun.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:104)
+	at com.sun.proxy.$Proxy4.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:48)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:33)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+14:41:29.444 WARN - Exception: no such element: Unable to locate element: {"method":"css selector","selector":".add-quantity-button"}
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.PzL4Rs}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3aa0207df2d3fc716c3f13cb4e0ec9df
+*** Element info: {Using=css selector, value=.add-quantity-button}
+14:41:29.615 INFO - Executing: [find elements: By.cssSelector: table tr])
+14:41:29.628 INFO - Done: [find elements: By.cssSelector: table tr]
+14:41:29.631 INFO - Executing: [find element: By.cssSelector: .shopping-cart > .count])
+14:41:29.642 INFO - Done: [find element: By.cssSelector: .shopping-cart > .count]
+14:41:29.644 INFO - Executing: [is displayed: 9 [[ChromeDriver: chrome on LINUX (3aa0207df2d3fc716c3f13cb4e0ec9df)] -> css selector: .shopping-cart > .count]])
+14:41:29.651 INFO - Done: [is displayed: 9 [[ChromeDriver: chrome on LINUX (3aa0207df2d3fc716c3f13cb4e0ec9df)] -> css selector: .shopping-cart > .count]]
+14:41:29.655 INFO - Executing: [find element: By.cssSelector: .remove-quantity-button])
+14:41:29.966 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".remove-quantity-button"}
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.PzL4Rs}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3aa0207df2d3fc716c3f13cb4e0ec9df
+*** Element info: {Using=css selector, value=.remove-quantity-button}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:501)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at sun.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:104)
+	at com.sun.proxy.$Proxy4.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:48)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:33)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+14:41:29.966 WARN - Exception: no such element: Unable to locate element: {"method":"css selector","selector":".remove-quantity-button"}
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.PzL4Rs}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3aa0207df2d3fc716c3f13cb4e0ec9df
+*** Element info: {Using=css selector, value=.remove-quantity-button}
+14:41:30.138 INFO - Executing: [find elements: By.cssSelector: table tr])
+14:41:30.156 INFO - Done: [find elements: By.cssSelector: table tr]
+14:41:30.159 INFO - Executing: [find element: By.cssSelector: .shopping-cart > .count])
+14:41:30.167 INFO - Done: [find element: By.cssSelector: .shopping-cart > .count]
+14:41:30.168 INFO - Executing: [is displayed: 9 [[ChromeDriver: chrome on LINUX (3aa0207df2d3fc716c3f13cb4e0ec9df)] -> css selector: .shopping-cart > .count]])
+14:41:30.176 INFO - Done: [is displayed: 9 [[ChromeDriver: chrome on LINUX (3aa0207df2d3fc716c3f13cb4e0ec9df)] -> css selector: .shopping-cart > .count]]
+14:41:30.180 INFO - Executing: [find element: By.cssSelector: #remove-all-items-button])
+14:41:30.197 INFO - Done: [find element: By.cssSelector: #remove-all-items-button]
+14:41:30.199 INFO - Executing: [click: 10 [[ChromeDriver: chrome on LINUX (3aa0207df2d3fc716c3f13cb4e0ec9df)] -> css selector: #remove-all-items-button]])
+14:41:30.517 WARN - Exception thrown
+org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 21 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.PzL4Rs}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3aa0207df2d3fc716c3f13cb4e0ec9df
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:332)
+	at com.sun.proxy.$Proxy5.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:345)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy6.click(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.ClickElement.call(ClickElement.java:30)
+	at org.openqa.selenium.remote.server.handler.ClickElement.call(ClickElement.java:22)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+14:41:30.517 WARN - Exception: element not visible
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 21 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.PzL4Rs}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3aa0207df2d3fc716c3f13cb4e0ec9df
+14:41:30.537 INFO - Executing: [dismiss alert])
+14:41:30.542 WARN - Exception thrown
+org.openqa.selenium.NoAlertPresentException: no alert open
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.PzL4Rs}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3aa0207df2d3fc716c3f13cb4e0ec9df
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1020)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringTargetLocator.alert(EventFiringWebDriver.java:612)
+	at org.openqa.selenium.remote.server.handler.DismissAlert.call(DismissAlert.java:30)
+	at org.openqa.selenium.remote.server.handler.DismissAlert.call(DismissAlert.java:22)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+14:41:30.543 WARN - Exception: no alert open
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.PzL4Rs}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3aa0207df2d3fc716c3f13cb4e0ec9df
+14:41:30.699 INFO - Executing: [find elements: By.cssSelector: table tr])
+14:41:30.712 INFO - Done: [find elements: By.cssSelector: table tr]
+14:41:30.715 INFO - Executing: [find element: By.cssSelector: .shopping-cart > .count])
+14:41:30.724 INFO - Done: [find element: By.cssSelector: .shopping-cart > .count]
+14:41:30.727 INFO - Executing: [is displayed: 9 [[ChromeDriver: chrome on LINUX (3aa0207df2d3fc716c3f13cb4e0ec9df)] -> css selector: .shopping-cart > .count]])
+14:41:30.736 INFO - Done: [is displayed: 9 [[ChromeDriver: chrome on LINUX (3aa0207df2d3fc716c3f13cb4e0ec9df)] -> css selector: .shopping-cart > .count]]
+14:41:30.743 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, marionette=true, name=4 Order, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
+14:41:30.744 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, marionette=true, name=4 Order, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351) on port 12573
+Only local connections are allowed.
+14:41:31.494 INFO - Detected dialect: OSS
+14:41:31.497 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, marionette=true, name=4 Order, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
+14:41:31.500 INFO - Executing: [get: http://localhost:8000/product.html?id=7])
+14:41:32.122 INFO - Done: [get: http://localhost:8000/product.html?id=7]
+14:41:32.278 INFO - Executing: [find element: By.cssSelector: #add-to-cart-form input])
+14:41:32.296 INFO - Done: [find element: By.cssSelector: #add-to-cart-form input]
+14:41:32.298 INFO - Executing: [clear: 0 [[ChromeDriver: chrome on LINUX (889e449660d009b02782b458a372bfc2)] -> css selector: #add-to-cart-form input]])
+14:41:32.692 WARN - Exception thrown
+org.openqa.selenium.WebDriverException: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.MUqS3e}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 889e449660d009b02782b458a372bfc2
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:114)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:332)
+	at com.sun.proxy.$Proxy5.clear(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.clear(EventFiringWebDriver.java:361)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy6.clear(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.ClearElement.call(ClearElement.java:30)
+	at org.openqa.selenium.remote.server.handler.ClearElement.call(ClearElement.java:22)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+14:41:32.692 WARN - Exception: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.MUqS3e}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 889e449660d009b02782b458a372bfc2
+14:41:32.735 INFO - Executing: [find element: By.cssSelector: #add-to-cart-form input])
+14:41:32.743 INFO - Done: [find element: By.cssSelector: #add-to-cart-form input]
+14:41:32.746 INFO - Executing: [send keys: 0 [[ChromeDriver: chrome on LINUX (889e449660d009b02782b458a372bfc2)] -> css selector: #add-to-cart-form input], [1]])
+14:41:33.146 WARN - Exception thrown
+org.openqa.selenium.WebDriverException: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 28 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.MUqS3e}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 889e449660d009b02782b458a372bfc2
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:332)
+	at com.sun.proxy.$Proxy5.sendKeys(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.sendKeys(EventFiringWebDriver.java:355)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy6.sendKeys(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.SendKeys.call(SendKeys.java:50)
+	at org.openqa.selenium.remote.server.handler.SendKeys.call(SendKeys.java:29)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+14:41:33.146 WARN - Exception: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 28 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.MUqS3e}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 889e449660d009b02782b458a372bfc2
+14:41:33.185 INFO - Executing: [find element: By.cssSelector: #add-to-cart-form])
+14:41:33.201 INFO - Done: [find element: By.cssSelector: #add-to-cart-form]
+14:41:33.203 INFO - Executing: [submit: 1 [[ChromeDriver: chrome on LINUX (889e449660d009b02782b458a372bfc2)] -> css selector: #add-to-cart-form]])
+14:41:33.666 WARN - Exception thrown
+org.openqa.selenium.WebDriverException: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 74 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.MUqS3e}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 889e449660d009b02782b458a372bfc2
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.submit(RemoteWebElement.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:332)
+	at com.sun.proxy.$Proxy5.submit(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.submit(EventFiringWebDriver.java:350)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy6.submit(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.SubmitElement.call(SubmitElement.java:30)
+	at org.openqa.selenium.remote.server.handler.SubmitElement.call(SubmitElement.java:22)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+14:41:33.667 WARN - Exception: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 74 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.MUqS3e}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 889e449660d009b02782b458a372bfc2
+14:41:33.710 INFO - Executing: [get: http://localhost:8000/order.html])
+14:41:33.770 INFO - Done: [get: http://localhost:8000/order.html]
+14:41:33.926 INFO - Executing: [find element: By.cssSelector: .shopping-cart > .count])
+14:41:33.948 INFO - Done: [find element: By.cssSelector: .shopping-cart > .count]
+14:41:33.949 INFO - Executing: [is displayed: 2 [[ChromeDriver: chrome on LINUX (889e449660d009b02782b458a372bfc2)] -> css selector: .shopping-cart > .count]])
+14:41:33.966 INFO - Done: [is displayed: 2 [[ChromeDriver: chrome on LINUX (889e449660d009b02782b458a372bfc2)] -> css selector: .shopping-cart > .count]]
+14:41:33.970 INFO - Executing: [find element: By.cssSelector: #order-form])
+14:41:33.988 INFO - Done: [find element: By.cssSelector: #order-form]
+14:41:33.990 INFO - Executing: [submit: 3 [[ChromeDriver: chrome on LINUX (889e449660d009b02782b458a372bfc2)] -> css selector: #order-form]])
+14:41:34.330 WARN - Exception thrown
+org.openqa.selenium.WebDriverException: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 34 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.MUqS3e}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 889e449660d009b02782b458a372bfc2
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.submit(RemoteWebElement.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:332)
+	at com.sun.proxy.$Proxy5.submit(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.submit(EventFiringWebDriver.java:350)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy6.submit(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.SubmitElement.call(SubmitElement.java:30)
+	at org.openqa.selenium.remote.server.handler.SubmitElement.call(SubmitElement.java:22)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+14:41:34.331 WARN - Exception: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 34 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.MUqS3e}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 889e449660d009b02782b458a372bfc2
+14:41:34.501 INFO - Executing: [get current url])
+14:41:34.512 INFO - Done: [get current url]
+14:41:34.516 INFO - Executing: [find element: By.cssSelector: #first-name-error])
+14:41:34.534 INFO - Done: [find element: By.cssSelector: #first-name-error]
+14:41:34.536 INFO - Executing: [get text: 4 [[ChromeDriver: chrome on LINUX (889e449660d009b02782b458a372bfc2)] -> css selector: #first-name-error]])
+14:41:34.552 INFO - Done: [get text: 4 [[ChromeDriver: chrome on LINUX (889e449660d009b02782b458a372bfc2)] -> css selector: #first-name-error]]
+14:41:34.556 INFO - Executing: [find element: By.cssSelector: #last-name-error])
+14:41:34.569 INFO - Done: [find element: By.cssSelector: #last-name-error]
+14:41:34.571 INFO - Executing: [get text: 5 [[ChromeDriver: chrome on LINUX (889e449660d009b02782b458a372bfc2)] -> css selector: #last-name-error]])
+14:41:34.586 INFO - Done: [get text: 5 [[ChromeDriver: chrome on LINUX (889e449660d009b02782b458a372bfc2)] -> css selector: #last-name-error]]
+14:41:34.588 INFO - Executing: [find element: By.cssSelector: #email-error])
+14:41:34.604 INFO - Done: [find element: By.cssSelector: #email-error]
+14:41:34.606 INFO - Executing: [get text: 6 [[ChromeDriver: chrome on LINUX (889e449660d009b02782b458a372bfc2)] -> css selector: #email-error]])
+14:41:34.626 INFO - Done: [get text: 6 [[ChromeDriver: chrome on LINUX (889e449660d009b02782b458a372bfc2)] -> css selector: #email-error]]
+14:41:34.630 INFO - Executing: [find element: By.cssSelector: #phone-error])
+14:41:34.645 INFO - Done: [find element: By.cssSelector: #phone-error]
+14:41:34.646 INFO - Executing: [get text: 7 [[ChromeDriver: chrome on LINUX (889e449660d009b02782b458a372bfc2)] -> css selector: #phone-error]])
+14:41:34.667 INFO - Done: [get text: 7 [[ChromeDriver: chrome on LINUX (889e449660d009b02782b458a372bfc2)] -> css selector: #phone-error]]
+14:41:34.669 INFO - Executing: [find element: By.cssSelector: #credit-card-error])
+14:41:34.686 INFO - Done: [find element: By.cssSelector: #credit-card-error]
+14:41:34.688 INFO - Executing: [get text: 8 [[ChromeDriver: chrome on LINUX (889e449660d009b02782b458a372bfc2)] -> css selector: #credit-card-error]])
+14:41:34.705 INFO - Done: [get text: 8 [[ChromeDriver: chrome on LINUX (889e449660d009b02782b458a372bfc2)] -> css selector: #credit-card-error]]
+14:41:34.708 INFO - Executing: [find element: By.cssSelector: #credit-card-expiry-error])
+14:41:34.721 INFO - Done: [find element: By.cssSelector: #credit-card-expiry-error]
+14:41:34.723 INFO - Executing: [get text: 9 [[ChromeDriver: chrome on LINUX (889e449660d009b02782b458a372bfc2)] -> css selector: #credit-card-expiry-error]])
+14:41:34.742 INFO - Done: [get text: 9 [[ChromeDriver: chrome on LINUX (889e449660d009b02782b458a372bfc2)] -> css selector: #credit-card-expiry-error]]
+14:41:34.747 INFO - Executing: [find element: By.cssSelector: #first-name])
+14:41:34.763 INFO - Done: [find element: By.cssSelector: #first-name]
+14:41:34.765 INFO - Executing: [clear: 10 [[ChromeDriver: chrome on LINUX (889e449660d009b02782b458a372bfc2)] -> css selector: #first-name]])
+14:41:35.108 WARN - Exception thrown
+org.openqa.selenium.WebDriverException: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 19 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.MUqS3e}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 889e449660d009b02782b458a372bfc2
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:114)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:332)
+	at com.sun.proxy.$Proxy5.clear(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.clear(EventFiringWebDriver.java:361)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy6.clear(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.ClearElement.call(ClearElement.java:30)
+	at org.openqa.selenium.remote.server.handler.ClearElement.call(ClearElement.java:22)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+14:41:35.108 WARN - Exception: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 19 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.MUqS3e}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 889e449660d009b02782b458a372bfc2
+14:41:35.129 INFO - Executing: [find element: By.cssSelector: #first-name])
+14:41:35.138 INFO - Done: [find element: By.cssSelector: #first-name]
+14:41:35.141 INFO - Executing: [send keys: 10 [[ChromeDriver: chrome on LINUX (889e449660d009b02782b458a372bfc2)] -> css selector: #first-name], [A]])
+14:41:35.485 WARN - Exception thrown
+org.openqa.selenium.WebDriverException: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 29 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.MUqS3e}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 889e449660d009b02782b458a372bfc2
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:332)
+	at com.sun.proxy.$Proxy5.sendKeys(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.sendKeys(EventFiringWebDriver.java:355)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy6.sendKeys(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.SendKeys.call(SendKeys.java:50)
+	at org.openqa.selenium.remote.server.handler.SendKeys.call(SendKeys.java:29)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+14:41:35.486 WARN - Exception: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 29 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.MUqS3e}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 889e449660d009b02782b458a372bfc2
+14:41:35.504 INFO - Executing: [find element: By.cssSelector: #first-name-error])
+14:41:35.512 INFO - Done: [find element: By.cssSelector: #first-name-error]
+14:41:35.514 INFO - Executing: [get text: 4 [[ChromeDriver: chrome on LINUX (889e449660d009b02782b458a372bfc2)] -> css selector: #first-name-error]])
+14:41:35.523 INFO - Done: [get text: 4 [[ChromeDriver: chrome on LINUX (889e449660d009b02782b458a372bfc2)] -> css selector: #first-name-error]]
+14:41:35.527 INFO - Executing: [find element: By.cssSelector: #order-form])
+14:41:35.536 INFO - Done: [find element: By.cssSelector: #order-form]
+14:41:35.538 INFO - Executing: [submit: 3 [[ChromeDriver: chrome on LINUX (889e449660d009b02782b458a372bfc2)] -> css selector: #order-form]])
+14:41:35.893 WARN - Exception thrown
+org.openqa.selenium.WebDriverException: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 23 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.MUqS3e}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 889e449660d009b02782b458a372bfc2
+	at sun.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.submit(RemoteWebElement.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:332)
+	at com.sun.proxy.$Proxy5.submit(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.submit(EventFiringWebDriver.java:350)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy6.submit(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.SubmitElement.call(SubmitElement.java:30)
+	at org.openqa.selenium.remote.server.handler.SubmitElement.call(SubmitElement.java:22)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+14:41:35.893 WARN - Exception: unknown error: call function result missing 'value'
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351),platform=Linux 4.15.0-36-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 23 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'paulelian-GL552JX', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-36-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498513 (2c63aa53b2c658de596ed550eb5267ec5967b351), userDataDir=/tmp/.org.chromium.Chromium.MUqS3e}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.67, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 889e449660d009b02782b458a372bfc2
+14:41:36.062 INFO - Executing: [get current url])
+14:41:36.069 INFO - Done: [get current url]

@@ -11,7 +11,7 @@ function displayProductsBy(order, category) {
     productsList.sortBy(curSortingCriterion);
     let productsToDisplay = productsList.getOnly(curDisplayedCategory);
     $.map(productsToDisplay ,function (product, i) {
-        let $productHtml = $(`<a id="${product.id}" href="./product.html?id=#${product.id}"></a>`);
+        let $productHtml = $(`<a id="${product.id}" href="./product.html?id=${product.id}"></a>`);
         let $productSection = $("<section class='product default-border'></section>");
         let priceStr = formatPrice(product.price); 
         $productSection.append(`<h2>${product.name}</h2>`)

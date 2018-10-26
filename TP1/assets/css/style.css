@@ -294,22 +294,25 @@ button .bouton {
 
 /*** ORDER ***/
 
-#form-order #order-contact {
+#order-form #order-contact {
 	margin-bottom: 2em;
 }
-#form-order #order-paiement {
+#order-form #order-paiement {
 	margin-bottom: 1em;
 }
-#form-order section div > div label {
+#order-form section div > div label {
 	display: block;
 }
-#form-order section div > div input {
+#order-form section div > div input {
 	width: 97%;
 	padding: 0.5em;
 }
-#form-order .col {
+#order-form .col {
 	flex-basis: 50%;
 }
-#form-order > input {
+#order-form > input {
 	float: right;
+}
+.error {
+	color: red;
 }

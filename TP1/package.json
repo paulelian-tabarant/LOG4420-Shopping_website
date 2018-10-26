@@ -12,7 +12,7 @@
   "devDependencies": {
     "assert": "^1.4.1",
     "gulp": "^3.9.1",
-    "gulp-connect": "^5.0.0",
+    "gulp-connect": "^5.6.1",
     "nightwatch": "^0.9.16",
     "nightwatch-custom-commands-assertions": "^1.1.0"
   },

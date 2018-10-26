@@ -6,8 +6,13 @@
   <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 	<script type="text/javascript" src="./assets/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="./assets/js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="./assets/js/additional-methods.min.js"></script>
+	<script type="text/javascript" src="./assets/js/messages_fr.js"></script>
 	<script type="text/javascript" src="./assets/script/services/header-service.js"></script>
 	<script type="text/javascript" src="./assets/script/controleurs/header-controller.js"></script>
+	<script type="text/javascript" src="./assets/script/services/order-service.js"></script>
+	<script type="text/javascript" src="./assets/script/controleurs/order-controller.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -34,25 +39,25 @@
 		</header>
 		<main class="main-content">
 			<h1>Ma commande</h1>
-			<form id="form-order" action="confirmation.html">
+			<form id="order-form" action="confirmation.html">
 				<section id="order-contact">
 					<h2>Contact</h2>
 					<div class="flex">
 						<div class="col">
 							<label for="first-name">Prénom</label>
-							<input class="default-border" id="first-name" type="text" name="prenom" placeholder="Prénom" required><br>
+							<input class="default-border" id="first-name" name="firstname" placeholder="Prénom"><br>
 						</div>
 						<div class="col">
 							<label for="last-name">Nom</label>
-							<input class="default-border" id="last-name" type="text" name="nom" placeholder="Nom" required><br>
+							<input class="default-border" id="last-name" name="lastname" placeholder="Nom"><br>
 						</div>
 						<div class="col">
 							<label for="email">Adresse e-mail</label>
-							<input class="default-border" id="email" type="email" name="mail" placeholder="Adresse mail" required><br>
+							<input class="default-border" id="email" name="email" placeholder="Adresse mail"><br>
 						</div>
 						<div class="col">
 							<label for="phone">Numéro de téléphone</label>
-							<input class="default-border" id="phone" type="tel" name="tel" placeholder="###-###-####" required><br>
+							<input class="default-border" id="phone" name="phone" placeholder="###-###-####"><br>
 						</div>
 					</div>
 				</section>
@@ -61,15 +66,15 @@
 					<div class="flex">
 						<div class="col">
 							<label for="credit-card">Numéro de carte de crédit</label>
-							<input class="default-border" id="credit-card" type="text" name="card" placeholder="**** **** **** ****" required><br>
+							<input class="default-border" id="credit-card" name="cardnumber" placeholder="**** **** **** ****"><br>
 						</div>
 						<div class="col">
 							<label for="credit-card-expiry">Date d'expiration de la carte</label>
-							<input class="default-border" id="credit-card-expiry" type="date" name="date" required>
+							<input class="default-border" id="credit-card-expiry" name="expirydate" placeholder="mm/aa">
 						</div>
 					</div>
 				</section>
-				<input class="bouton" type="submit" name="envoyer" value="Payer">
+				<input id="submit-form" class="bouton" type="submit" name="envoyer" value="Payer">
 			</form>
 		</main>
 		<div class="push"></div>
