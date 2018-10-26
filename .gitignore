@@ -1,0 +1,4 @@
+TP1/node_modules
+*.vscode
+TP1/tests/reports
+.undodir
