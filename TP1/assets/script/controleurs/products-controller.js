@@ -53,10 +53,10 @@ $(function () {
     $.each($sortingButtons,
         (i, button) => {
             $(button).click( () => { 
-                displayProductsBy(i, curDisplayedCategory); 
+                displayProductsBy(i, productsList.ALL); 
                 setAsSelected($("#product-criteria"), i);
             } );
         }
     ); 
-    displayProductsBy(productsList.PRICE_LH);
+    displayProductsBy(productsList.PRICE_LH, productsList.ALL);
 });

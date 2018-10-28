@@ -31,14 +31,10 @@ const product = {
                     this.found = true;
                 }
             });
-            // notify controller here if found == false
-            if(!this.found) {
-                // must wait for the DOM to be loaded before
-                $(function (){
-                    productNotFound();
-                });
-            }
         });
+    },
+    hasBeenLoaded: function() {
+        return this.found;
     },
     getId: function() {
         return this.id;

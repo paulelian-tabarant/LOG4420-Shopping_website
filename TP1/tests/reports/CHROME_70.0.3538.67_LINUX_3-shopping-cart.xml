@@ -5,9 +5,9 @@
 
   <testsuite name="3-shopping-cart"
     errors="3" failures="6" hostname="" id="" package="3-shopping-cart" skipped="0"
-    tests="6" time="9.315" timestamp="Fri, 26 Oct 2018 18:41:21 GMT">
+    tests="6" time="10.99" timestamp="Fri, 26 Oct 2018 21:23:07 GMT">
   
-    <testcase name="Aucun produit dans le panier" classname="3-shopping-cart" time="2.177" assertions="2">
+    <testcase name="Aucun produit dans le panier" classname="3-shopping-cart" time="1.585" assertions="2">
 
       <failure message="Le paragraphe doit indiquer &#39;Aucun produit dans le panier.&#39;.">    at validateEmptyShoppingCartView (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/tests/e2e/3-shopping-cart.js:17:13)
     at Object.Aucun produit dans le panier (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/tests/e2e/3-shopping-cart.js:151:5)</failure>
@@ -15,32 +15,32 @@
     
     </testcase>
   
-    <testcase name="Un ou plusieurs produits dans le panier" classname="3-shopping-cart" time="4.989" assertions="1">  <failure message="Le nombre de produits dans le panier doit pas être visible.">    at validateShoppingCartTable (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/tests/e2e/3-shopping-cart.js:93:17)
+    <testcase name="Un ou plusieurs produits dans le panier" classname="3-shopping-cart" time="6.611" assertions="1">  <failure message="Le nombre de produits dans le panier doit pas être visible.">    at validateShoppingCartTable (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/tests/e2e/3-shopping-cart.js:93:17)
     at Object.Un ou plusieurs produits dans le panier (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/tests/e2e/3-shopping-cart.js:170:5)</failure>
 
     
     </testcase>
   
-    <testcase name="Suppression d&#39;un item dans le panier" classname="3-shopping-cart" time="0.5350" assertions="1">  <failure message="Le nombre de produits dans le panier doit pas être visible.">    at validateShoppingCartTable (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/tests/e2e/3-shopping-cart.js:93:17)
+    <testcase name="Suppression d&#39;un item dans le panier" classname="3-shopping-cart" time="0.6970" assertions="1">  <failure message="Le nombre de produits dans le panier doit pas être visible.">    at validateShoppingCartTable (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/tests/e2e/3-shopping-cart.js:93:17)
     at Object.&lt;anonymous&gt; (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/tests/e2e/3-shopping-cart.js:185:7)
     at endReadableNT (_stream_readable.js:1094:12)</failure>
 
     
     </testcase>
   
-    <testcase name="Augmentation de la quantite associee a un item dans le panier" classname="3-shopping-cart" time="0.5310" assertions="1">  <failure message="Le nombre de produits dans le panier doit pas être visible.">    at validateShoppingCartTable (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/tests/e2e/3-shopping-cart.js:93:17)
+    <testcase name="Augmentation de la quantite associee a un item dans le panier" classname="3-shopping-cart" time="0.6850" assertions="1">  <failure message="Le nombre de produits dans le panier doit pas être visible.">    at validateShoppingCartTable (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/tests/e2e/3-shopping-cart.js:93:17)
     at Object.&lt;anonymous&gt; (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/tests/e2e/3-shopping-cart.js:204:7)</failure>
 
     
     </testcase>
   
-    <testcase name="Diminution de la quantite associee a un item dans le panier" classname="3-shopping-cart" time="0.5240" assertions="1">  <failure message="Le nombre de produits dans le panier doit pas être visible.">    at validateShoppingCartTable (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/tests/e2e/3-shopping-cart.js:93:17)
+    <testcase name="Diminution de la quantite associee a un item dans le panier" classname="3-shopping-cart" time="0.7010" assertions="1">  <failure message="Le nombre de produits dans le panier doit pas être visible.">    at validateShoppingCartTable (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/tests/e2e/3-shopping-cart.js:93:17)
     at Object.&lt;anonymous&gt; (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/tests/e2e/3-shopping-cart.js:213:7)</failure>
 
     
     </testcase>
   
-    <testcase name="Suppression de tous les produits dans le panier" classname="3-shopping-cart" time="0.5590" assertions="1">  <failure message="Le nombre de produits dans le panier doit pas être visible.">    at validateShoppingCartTable (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/tests/e2e/3-shopping-cart.js:93:17)
+    <testcase name="Suppression de tous les produits dans le panier" classname="3-shopping-cart" time="0.7120" assertions="1">  <failure message="Le nombre de produits dans le panier doit pas être visible.">    at validateShoppingCartTable (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/tests/e2e/3-shopping-cart.js:93:17)
     at Object.&lt;anonymous&gt; (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/tests/e2e/3-shopping-cart.js:227:7)
     at endReadableNT (_stream_readable.js:1094:12)</failure>
 
@@ -50,31 +50,7 @@
 
   
     <system-err>
-        Error while running [1 Products / Liste des produits pour les valeurs par defauts]:
-
-  AssertionError [ERR_ASSERTION]: Le lien pour le produit #1 doit être &#39;product.html?id=13&#39;.
-    at Object.&lt;anonymous&gt; (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/tests/e2e/1-products.js:71:15)
-    at HttpRequest.&lt;anonymous&gt; (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/node_modules/nightwatch/lib/index.js:366:18)
-    at HttpRequest.emit (events.js:182:13)
-    at HttpRequest.&lt;anonymous&gt; (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/node_modules/nightwatch/lib/index.js:382:15)
-    at HttpRequest.emit (events.js:182:13)
-    at IncomingMessage.&lt;anonymous&gt; (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/node_modules/nightwatch/lib/http/request.js:170:16)
-    at IncomingMessage.emit (events.js:187:15)
-    at endReadableNT (_stream_readable.js:1094:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)
-  Error while running [1 Products / Categories des produits]:
-
-  AssertionError [ERR_ASSERTION]: Le lien pour le produit #1 doit être &#39;product.html?id=4&#39;.
-    at Object.&lt;anonymous&gt; (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/tests/e2e/1-products.js:71:15)
-    at HttpRequest.&lt;anonymous&gt; (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/node_modules/nightwatch/lib/index.js:366:18)
-    at HttpRequest.emit (events.js:182:13)
-    at HttpRequest.&lt;anonymous&gt; (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/node_modules/nightwatch/lib/index.js:382:15)
-    at HttpRequest.emit (events.js:182:13)
-    at IncomingMessage.&lt;anonymous&gt; (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/node_modules/nightwatch/lib/http/request.js:170:16)
-    at IncomingMessage.emit (events.js:187:15)
-    at endReadableNT (_stream_readable.js:1094:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)
-ERROR: Unable to locate element: &#34;.remove-item-button&#34; using: css selector
+      ERROR: Unable to locate element: &#34;.remove-item-button&#34; using: css selector
     at pressRemoveItemButton (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/tests/e2e/3-shopping-cart.js:175:21)
     at Object.Suppression d&#39;un item dans le panier (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/tests/e2e/3-shopping-cart.js:180:5)
     at Module.call (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/node_modules/nightwatch/lib/runner/module.js:62:34)
