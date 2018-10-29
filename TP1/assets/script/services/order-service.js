@@ -15,7 +15,7 @@ const orders = {
 		}
     },
     save: function() {
-        contentStr = JSON.stringify(this.content);
+        let contentStr = JSON.stringify(this.content);
         localStorage.setItem(this.storageKey, contentStr);
     },
     add: function(name, surname)  {

@@ -12,6 +12,12 @@ const panier = {
 			}
 		}
 	},
+	remove: function(i) {
+		if(i >= 0 && i < this.products.length) {
+			this.products.splice(i, 1);
+			this.save();
+		}
+	},
 	getContent: function() {
 		return this.products.slice();
 	},
@@ -26,15 +32,13 @@ const panier = {
 		});
 		return Math.round(amount * 100) / 100;
 	},
+	getNbOf: function(i) {
+		let nbOfProduct = this.products[i].number;
+		return nbOfProduct;
+	},
 	modifyNbOf: function(i, delta) {
 		this.products[i].number += delta;
 		this.save();
-	},
-	remove: function(i) {
-		if(i >= 0 && i < this.products.length) {
-			this.products.splice(i, 1);
-			this.save();
-		}
 	},
 	// writes cart content into local storage
 	save: function() {

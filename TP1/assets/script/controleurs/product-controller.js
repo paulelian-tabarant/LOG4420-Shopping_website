@@ -1,14 +1,14 @@
 "use strict";
 
 function displayProduct() {
-    $('main').append('<h1>'+product.getName()+'</h1>'+
+    $('main').append('<h1 id="product-name">'+product.getName()+'</h1>'+
                 '<div class="product-details flex">'+
                     '<div class="col">'+
-                        '<img alt="'+product.getName()+'" src="'+product.getImage()+'">'+
+                        '<img id="product-image" alt="'+product.getName()+'" src="'+product.getImage()+'">'+
                     '</div>'+
                     '<div class="col">'+
                         '<h2>Description</h2>'+
-                        '<p>'+product.getDesc()+'</p>'+
+                        '<p id="product-desc">'+product.getDesc()+'</p>'+
                         '<h2>Caractéristiques</h2>'+
                         '<ul id="product-features">'+
                             '<!-- Product features will be placed here, into <li></li> elements -->'+
@@ -28,11 +28,6 @@ function displayProduct() {
                     'Le produit a été ajouté au panier.'+
                 '</div>');
 }
-
-// called by product service if product has not
-// been found into the JSON file
-// page starts loading ...
-//product.load();
 
 // page finished loading, do stuff on the DOM
 $(document).ready(function() {

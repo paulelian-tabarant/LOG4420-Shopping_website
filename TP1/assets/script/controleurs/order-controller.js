@@ -19,13 +19,11 @@ function masterCard(value) {
 }
 
 // when page is loading...
-$.validator.addMethod("mastercard", masterCard, "Veuillez saisir un numéro de carte valide.");
-$.validator.addMethod("expirydate", expiryDate, "La date d’expiration de votre carte de crédit est invalide.");
+$.validator.addMethod("mastercard", masterCard, "Veuillez fournir un numéro de carte de crédit valide.");
+$.validator.addMethod("expirydate", expiryDate, "La date d'expiration de votre carte de crédit est invalide.");
 
 // stuff to do on the DOM
 $(function() {
-    let name = $("#first-name").val();
-    let surname = $("#last-name").val();
     let $orderForm = $("#order-form");
 
     // fields verification
@@ -57,6 +55,8 @@ $(function() {
             }
         },
         submitHandler: function(form) {
+            let name = $("#first-name").val();
+            let surname = $("#last-name").val();
             form.submit();
             panier.clear();
             orders.add(name, surname);

@@ -1,9 +1,9 @@
 "use strict";
 
-orders.load();
-let order = orders.getLast();
-
 $(function() {
+	orders.load();
+	let order = orders.getLast();
+
     let $nameSpan = $("#name");
     let $orderNb = $("#confirmation-number");
 
