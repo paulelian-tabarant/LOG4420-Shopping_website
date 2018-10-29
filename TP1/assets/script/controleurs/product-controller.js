@@ -1,34 +1,62 @@
+"use strict";
+
+function displayProduct() {
+    $('main').append('<h1>'+product.getName()+'</h1>'+
+                '<div class="product-details flex">'+
+                    '<div class="col">'+
+                        '<img alt="'+product.getName()+'" src="'+product.getImage()+'">'+
+                    '</div>'+
+                    '<div class="col">'+
+                        '<h2>Description</h2>'+
+                        '<p>'+product.getDesc()+'</p>'+
+                        '<h2>Caractéristiques</h2>'+
+                        '<ul id="product-features">'+
+                            '<!-- Product features will be placed here, into <li></li> elements -->'+
+                        '</ul>'+
+                        '<hr class="separator">'+
+                        '<div class="flex">'+
+                            '<p>Prix: <span id="product-price"></span></p>'+
+                            '<form id="add-to-cart-form">'+
+                                '<label for="quantite">Quantité : </label>'+
+                                '<input class="default-border" id="quantite" type="number" value="1" min="1">'+
+                                '<button type="submit" class="bouton"><span class="fas fa-cart-plus"></span> Ajouter</button>'+
+                            '</form>'+
+                        '</div>'+
+                    '</div>'+
+                '</div>'+
+                '<div hidden class="dialog-box" id="dialog">'+
+                    'Le produit a été ajouté au panier.'+
+                '</div>');
+}
+
 // called by product service if product has not
 // been found into the JSON file
 // page starts loading ...
-product.load();
+//product.load();
 
 // page finished loading, do stuff on the DOM
-$(function() {
-    // DOM selectors
-    $main = $("main");
-    $name = $("#product-name");
-    $image = $("#product-image");
-    $description = $("#product-desc");
-    $features = $("#product-features");
-    $price = $("#product-price");
-    $addToCartBtn = $("#add-to-cart-form > button");
-    $quantity = $("#quantite");
-    $cartDialog = $("#dialog");
+$(document).ready(function() {
+
+    product.load();
 
     // Getting data and loading content into the html structure
     if(!product.hasBeenLoaded()) {
-        $main.html($("#product-not-found"));
-        $("#product-not-found").show();
+        $('main').html('<h1>Page non trouvée!</h1>');
         return;
     }
-    $name.text(product.getName());
-    $image.attr("src", product.getImage());
-    $description.html(product.getDesc());
+    displayProduct();
+
+    // DOM selectors
+    let $features = $("#product-features");
+    let $price = $("#product-price");
+    let $quantity = $("#quantite");
+    let $cartDialog = $("#dialog");
+
     $.each(product.getFeatures(), (i, feature) => { 
         $features.append(`<li>${feature}</li>`); 
     });
     $price.text(formatPrice(product.getPrice()));
+
     $("#add-to-cart-form").on("submit", (e) => {
         e.preventDefault();
         let nb = Number($quantity.val());

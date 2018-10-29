@@ -1,3 +1,5 @@
+"use strict";
+
 orders.load();
 let order = orders.getLast();
 

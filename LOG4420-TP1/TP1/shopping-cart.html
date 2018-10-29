@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>OnlineShop - Panier</title>
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div>
+				<a href="index.html"><img alt="logo" src="./assets/img/logo.svg"></a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Accueil</a></li>
+						<li><a href="products.html">Produits</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li>
+							<a class="shopping-cart" href="./shopping-cart.html" title="Panier">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+									<i class="fa fa-shopping-cart fa-stack-1x"></i>
+								</span>
+								<div class="count">3</div>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="main-content">
+			<div class="array-container">
+				<h1>Panier</h1>
+				<table>
+					<thead class="array-border">
+						<tr>
+							<th></th>
+							<th>Nom</th>
+							<th>Prix unitaire</th>
+							<th>Quantité</th>
+							<th>Prix</th>
+						</tr>
+					</thead>
+					<tbody class="array-border">
+						<tr>
+							<td><button><i class="fas fa-times"></i></button></td>
+							<td><a href="product.html">Manette Xbox 360</a></td>
+							<td>29.99 $</td>
+							<td><button><i class="fas fa-minus"></i></button><span>2</span><button class="plus"><i class="fas fa-plus"></i></button></td>
+							<td>59.98 $</td>
+						</tr>
+						<tr>
+							<td><button><i class="fas fa-times"></i></button></td>
+							<td><a href="product.html">Console Xbox One</a></td>
+							<td>399.99 $</td>
+							<td><button><i class="fas fa-minus"></i></button><span>1</span><button class="plus"><i class="fas fa-plus"></i></button></td>
+							<td>399.99 $</td>
+						</tr>
+						<tr>
+							<td><button><i class="fas fa-times"></i></button></td>
+							<td><a href="product.html">Portable professionnel</a></td>
+							<td>559.99 $</td>
+							<td><button><i class="fas fa-minus"></i></button><span>1</span><button class="plus"><i class="fas fa-plus"></i></button></td>
+							<td>559.99 $</td>
+						</tr>
+					</tbody>
+				</table>
+				<p id="total">Total : 1019.96 $</p>
+				<div class="flex">
+					<button class="bouton">Vider le panier</button>
+					<a class="bouton" href="order.html">Commander</a>
+				</div>
+			</div>
+		</main>
+		<div class="push"></div>
+	</div>
+	<footer>
+		<p>Alban Deniau - 1929132</p>
+		<p>Paul-Elian Tabarant - 1969626</p>
+	</footer>
+</body>
+</html>

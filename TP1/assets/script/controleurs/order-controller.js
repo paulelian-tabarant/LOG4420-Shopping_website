@@ -1,3 +1,5 @@
+"use strict";
+
 function expiryDate(value) {
     // "mm/aa" format
     let dateRegex = /^[0-1][0-9]\/[0-9]{2}$/;
@@ -24,7 +26,7 @@ $.validator.addMethod("expirydate", expiryDate, "La date d’expiration de votre
 $(function() {
     let name = $("#first-name").val();
     let surname = $("#last-name").val();
-    $orderForm = $("#order-form");
+    let $orderForm = $("#order-form");
 
     // fields verification
     $orderForm.validate({

@@ -1,18 +1,26 @@
+"use strict";
+
 function displayCartContent() {
     // DOM selectors
-    $arrayContainer = $("main > .array-container");
-    $emptyCartParagraph = $("#no-item-in-cart");
-    $cartTableBody = $("tbody");
-    $totalAmountSpan = $("#total-amount");
+    let $arrayContainer = $("main > .array-container");
+    let $emptyCartParagraph = $("#no-item-in-cart");
+    let $cartTableBody = $("tbody");
+    let $totalAmountSpan = $("#total-amount");
 
     // DOM manipulation
     let cartProducts = panier.getContent();
-    if(panier.count()) {
+
+    // no item in cart
+    if(panier.count()==0) {
+        $emptyCartParagraph.show();
+        $arrayContainer.hide();
+    }
+    else {
         $emptyCartParagraph.hide();
         $arrayContainer.show();
         let body = []; 
         $.each(cartProducts, function (i, item) {
-            $newRow = $("<tr></tr>");
+            let $newRow = $("<tr></tr>");
             $newRow.append("<td><button class='remove-item-button'><i class='fas fa-times'></i></button></td>")
             .append(`<td><a href="product.html?id=${item.id}">${item.name}</a></td>`)
             .append(`<td>${formatPrice(item.price)}</td>`)
@@ -47,13 +55,7 @@ function displayCartContent() {
             });
         });
     }
-    // no item in cart
-    else {
-        $emptyCartParagraph.show();
-        $arrayContainer.hide();
-    }
 }
-
 
 // When DOM is loaded
 $(function() {

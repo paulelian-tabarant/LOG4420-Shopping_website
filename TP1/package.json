@@ -16,5 +16,8 @@
     "nightwatch": "^0.9.16",
     "nightwatch-custom-commands-assertions": "^1.1.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gump": "^0.1.2",
+    "selenium": "^2.20.0"
+  }
 }

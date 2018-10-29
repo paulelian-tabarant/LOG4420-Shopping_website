@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>OnlineShop - Commande</title>
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div>
+				<a href="index.html"><img alt="logo" src="./assets/img/logo.svg"></a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Accueil</a></li>
+						<li><a href="products.html">Produits</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li>
+							<a class="shopping-cart" href="./shopping-cart.html" title="Panier">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+									<i class="fa fa-shopping-cart fa-stack-1x"></i>
+								</span>
+								<div class="count">3</div>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="main-content">
+			<h1>Ma commande</h1>
+			<form id="form-order" action="confirmation.html">
+				<section id="order-contact">
+					<h2>Contact</h2>
+					<div class="flex">
+						<div class="col">
+							<label for="first-name">Prénom</label>
+							<input class="default-border" id="first-name" type="text" name="prenom" placeholder="Prénom" required><br>
+						</div>
+						<div class="col">
+							<label for="last-name">Nom</label>
+							<input class="default-border" id="last-name" type="text" name="nom" placeholder="Nom" required><br>
+						</div>
+						<div class="col">
+							<label for="email">Adresse e-mail</label>
+							<input class="default-border" id="email" type="email" name="mail" placeholder="Adresse mail" required><br>
+						</div>
+						<div class="col">
+							<label for="phone">Numéro de téléphone</label>
+							<input class="default-border" id="phone" type="tel" name="tel" placeholder="###-###-####" required><br>
+						</div>
+					</div>
+				</section>
+				<section id="order-paiement">
+					<h2>Paiement</h2>
+					<div class="flex">
+						<div class="col">
+							<label for="credit-card">Numéro de carte de crédit</label>
+							<input class="default-border" id="credit-card" type="text" name="card" placeholder="**** **** **** ****" required><br>
+						</div>
+						<div class="col">
+							<label for="credit-card-expiry">Date d'expiration de la carte</label>
+							<input class="default-border" id="credit-card-expiry" type="date" name="date" required>
+						</div>
+					</div>
+				</section>
+				<input class="bouton" type="submit" name="envoyer" value="Payer">
+			</form>
+		</main>
+		<div class="push"></div>
+	</div>
+	<footer>
+		<p>Alban Deniau - 1929132</p>
+		<p>Paul-Elian Tabarant - 1969626</p>
+	</footer>
+</body>
+</html>

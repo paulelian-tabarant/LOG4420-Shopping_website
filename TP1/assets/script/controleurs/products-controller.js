@@ -1,3 +1,5 @@
+"use strict";
+
 let curDisplayedCategory = productsList.ALL, 
     curSortingCriterion = productsList.PRICE_LH;
 
@@ -37,6 +39,7 @@ productsList.load();
 
 // Page is now loaded, do things on the DOM
 $(function () {
+
     // DOM objects
     let $sortingButtons = $("#product-criteria > button");
     let $categoryButtons = $("#product-categories > button");
@@ -53,10 +56,12 @@ $(function () {
     $.each($sortingButtons,
         (i, button) => {
             $(button).click( () => { 
-                displayProductsBy(i, productsList.ALL); 
+                displayProductsBy(i, curDisplayedCategory); 
                 setAsSelected($("#product-criteria"), i);
             } );
         }
-    ); 
-    displayProductsBy(productsList.PRICE_LH, productsList.ALL);
+    );
+    $.when(productsList.getContent().length!=0).then(function() {
+        displayProductsBy(productsList.PRICE_LH, productsList.ALL);
+    });
 });

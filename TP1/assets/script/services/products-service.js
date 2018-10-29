@@ -1,3 +1,5 @@
+"use strict";
+
 const productsList = {
     content: [],
     // sorting criteria

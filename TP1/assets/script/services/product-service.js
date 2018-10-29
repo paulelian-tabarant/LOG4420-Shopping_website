@@ -1,3 +1,5 @@
+"use strict";
+
 // According to https://www.sitepoint.com/url-parameters-jquery/
 $.urlParam = function(name) {
     let results = new RegExp("[\?&]" + name + "=([^]*)").exec(window.location.href);
@@ -20,17 +22,22 @@ const product = {
     // Methods
     load: function() {
         this.found = false;
-        $.getJSON( "data/products.json", ( products ) => {
-            $.each( products, (i, product) => {
-                if(product.id === this.id) {
-                    this.name = product.name;
-                    this.image = product.image;
-                    this.description = product.description;
-                    this.price = product.price;
-                    this.features = product.features;
-                    this.found = true;
-                }
-            });
+        $.ajax({
+            dataType: "json",
+            url: "data/products.json",
+            success: (products) => {
+                $.each( products, (i, product) => {
+                    if(product.id === this.id) {
+                        this.name = product.name;
+                        this.image = product.image;
+                        this.description = product.description;
+                        this.price = product.price;
+                        this.features = product.features;
+                        this.found = true;
+                    }
+                });
+            },
+            async: false
         });
     },
     hasBeenLoaded: function() {

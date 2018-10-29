@@ -1,4 +1,5 @@
 "use strict";
+
 // should be called each time cart content is modified.
 function refreshCartIcon() {
 	let counter = panier.count();
