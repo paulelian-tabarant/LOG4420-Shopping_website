@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="3"
+            tests="4">
+
+  <testsuite name="4-order"
+    errors="0" failures="3" hostname="" id="" package="4-order" skipped="0"
+    tests="4" time="6.213" timestamp="Fri, 26 Oct 2018 21:23:18 GMT">
+  
+    <testcase name="État du panier d&#39;achats" classname="4-order" time="3.492" assertions="1">  <failure message="Le nombre de produits dans le panier doit pas être visible.">    at Object.État du panier d&#39;achats (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/tests/e2e/4-order.js:87:19)
+    at process._tickCallback (internal/process/next_tick.js:61:11)</failure>
+
+    
+    </testcase>
+  
+    <testcase name="Soumission d&#39;un formulaire invalide" classname="4-order" time="0.9240" assertions="7">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Remplissage du formulaire" classname="4-order" time="1.106" assertions="1">  <failure message="Le champ #first-name doit indiquer une erreur pour la valeur &#39;A&#39;.">    at /home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/tests/e2e/4-order.js:116:23
+    at Array.forEach (&lt;anonymous&gt;)
+    at /home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/tests/e2e/4-order.js:106:21
+    at Array.forEach (&lt;anonymous&gt;)
+    at Object.Remplissage du formulaire (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/tests/e2e/4-order.js:105:12)</failure>
+
+    
+    </testcase>
+  
+    <testcase name="Soumission d&#39;un formulaire valide" classname="4-order" time="0.6910" assertions="1">  <failure message="La page de confirmation doit être affichée.">    at Object.Soumission d&#39;un formulaire valide (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/tests/e2e/4-order.js:129:19)
+    at process._tickCallback (internal/process/next_tick.js:61:11)</failure>
+
+    
+    </testcase>
+  
+
+  
+    <system-err>
+      ERROR: Unable to locate element: &#34;.remove-item-button&#34; using: css selector
+    at pressRemoveItemButton (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/tests/e2e/3-shopping-cart.js:175:21)
+    at Object.Suppression d&#39;un item dans le panier (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/tests/e2e/3-shopping-cart.js:180:5)
+    at Module.call (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/node_modules/nightwatch/lib/runner/module.js:62:34)
+    at /home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/node_modules/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/node_modules/q/q.js:834:54)
+    at /home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/node_modules/q/q.js:863:30
+    at Promise.promise.promiseDispatch (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/node_modules/q/q.js:796:13)
+    at /home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/node_modules/q/q.js:556:49
+    at runSingle (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/node_modules/q/q.js:137:13)
+    at flush (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/node_modules/q/q.js:125:13)
+ERROR: Unable to locate element: &#34;.add-quantity-button&#34; using: css selector
+    at Object.Augmentation de la quantite associee a un item dans le panier (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/tests/e2e/3-shopping-cart.js:200:12)
+    at Module.call (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/node_modules/nightwatch/lib/runner/module.js:62:34)
+    at /home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/node_modules/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/node_modules/q/q.js:834:54)
+    at /home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/node_modules/q/q.js:863:30
+    at Promise.promise.promiseDispatch (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/node_modules/q/q.js:796:13)
+    at /home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/node_modules/q/q.js:556:49
+    at runSingle (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/node_modules/q/q.js:137:13)
+    at flush (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/node_modules/q/q.js:125:13)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+ERROR: Unable to locate element: &#34;.remove-quantity-button&#34; using: css selector
+    at Object.Diminution de la quantite associee a un item dans le panier (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/tests/e2e/3-shopping-cart.js:209:12)
+    at Module.call (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/node_modules/nightwatch/lib/runner/module.js:62:34)
+    at /home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/node_modules/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/node_modules/q/q.js:834:54)
+    at /home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/node_modules/q/q.js:863:30
+    at Promise.promise.promiseDispatch (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/node_modules/q/q.js:796:13)
+    at /home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/node_modules/q/q.js:556:49
+    at runSingle (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/node_modules/q/q.js:137:13)
+    at flush (/home/paul-elian/Dropbox/EPM/LOG4420/git_TP/TP1/node_modules/q/q.js:125:13)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+    </system-err>
+  
+
+  
+  </testsuite>
+</testsuites>

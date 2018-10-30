@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>OnlineShop - Confirmation</title>
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<script type="text/javascript" src="./assets/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="./assets/script/services/header-service.js"></script>
+	<script type="text/javascript" src="./assets/script/controleurs/header-controller.js"></script>
+	<script type="text/javascript" src="./assets/script/services/order-service.js"></script>
+	<script type="text/javascript" src="./assets/script/controleurs/confirmation-controller.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div>
+				<a href="index.html"><img alt="logo" src="./assets/img/logo.svg"></a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Accueil</a></li>
+						<li><a href="products.html">Produits</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li>
+							<a class="shopping-cart" href="./shopping-cart.html" title="Panier">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+									<i class="fa fa-shopping-cart fa-stack-1x"></i>
+								</span>
+								<div class="count"></div>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="main-content">
+			<h1> Votre commande a été confirmée <span id="name"></span> !</h1>
+			<p> Votre numéro de confirmation est le <span id="confirmation-number" class="bold"></span>.</p>
+		</div>
+		<div class="push"></div>
+	</div>
+	<footer>
+		<p>Alban Deniau - 1929132</p>
+		<p>Paul-Elian Tabarant - 1969626</p>
+	</footer>
+</body>
+</html>
