@@ -2,8 +2,9 @@
 const dbAddr = "mongodb://admin:onlineshop4420@ds155293.mlab.com:55293/online-shop-data"
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
+const validator = require("validator");
 
-const orderSchema = new Schema({
+const orders = new Schema({
   id: {
     type: Number,
     unique: true
@@ -18,7 +19,7 @@ const orderSchema = new Schema({
 });
 
 
-const productSchema = new Schema({
+const products = new Schema({
   id: {
     type: Number,
     unique: true
@@ -33,14 +34,39 @@ const productSchema = new Schema({
   versionKey: false
 });
 
-const Order = mongoose.model("Order", orderSchema);
-const Product = mongoose.model("Product", productSchema);
+
+function productValidator(id, name, price, image, category, description, features) {
+  try {
+    let idBool = validator.isInt(String(id)),
+      nameBool = (typeof (name) === "string") && name.length > 0,
+      priceBool = validator.isDecimal(String(price), {
+        decimal_digits: '2'
+      }),
+      imageBool = validator.isAscii(image),
+      catBool = validator.isAscii(category) && db.catList.includes(category),
+      descBool = typeof (description) == "string" && description.length > 0;
+    let featuresBool = true;
+    if (!features.length) featuresBool = false;
+    features.forEach(feature => {
+      featuresBool = featuresBool && typeof (feature) === "string" && feature.length > 0;
+    });
+    let valid = idBool && nameBool && priceBool && imageBool && catBool && descBool && featuresBool;
+    return valid;
+  } catch (err) {
+    console.log(err);
+    return false;
+  }
+}
+
+const Order = mongoose.model("Order", orders);
+const Product = mongoose.model("Product", products);
 
 mongoose.Promise = global.Promise;
 
 mongoose.connect(dbAddr, {
   useMongoClient: true
 });
+
 
 const db = {
 
@@ -49,26 +75,43 @@ const db = {
   catList: ["cameras", "computers", "consoles", "screens"],
   criList: ["alpha-asc", "alpha-dsc", "price-asc", "price-dsc"],
 
+  sortByPriceAsc: function(a, b) {
+    return a.price - b.price;
+  },
+
+  sortByPriceDsc : function(a, b) {
+    return b.price - a.price;
+  },
+
+  sortByNameAsc : function (a, b) {
+    return a.name.localeCompare(b.name);
+  },
+
+  sortByNameDsc : function (a, b) {
+    return b.name.localeCompare(a.name);
+  },
+
   getProducts: function (category, criterion, onProductsRetrieval) {
 
     let products = [];
-    let sortAttr = "";
-    let sortPrefix = "";
+    let sortFunction = null;
     if (!criterion)
       // set as "price-asc" by default
       criterion = "price-asc";
-    if(!this.criList.includes(criterion))
-      return null;
-    if (/^alpha/.test(criterion))
-      sortAttr = "name";
+    // checks if category & sorting criterion are valid
+    if (!this.criList.includes(criterion) || (category && !this.catList.includes(category))) {
+      onProductsRetrieval(null);
+      return;
+    }
+
+    if (criterion === "alpha-asc")
+      sortFunction = this.sortByNameAsc;
+    else if (criterion === "alpha-dsc")
+      sortFunction = this.sortByNameDsc;
+    else if (criterion === "price-dsc")
+      sortFunction = this.sortByPriceDsc;
     else
-      sortAttr = "price";
-    if (/dsc$/.test(criterion))
-      // mongoDB criterion uses a '-' prefix for descending order
-      sortPrefix += '-';
-    
-    if (category && !this.catList.includes(category))
-      return null;
+      sortFunction = this.sortByPriceAsc;
 
     let productCatReq = null;
     if (!category)
@@ -76,14 +119,14 @@ const db = {
       productCatReq = Product.find();
     else
       productCatReq = Product.find({
-        category: "/"+category+"/"
+        category: category
       });
     productCatReq.
-    sort(sortPrefix + sortAttr).
     exec((err, res) => {
-      if (res) 
+      if (res) {
         products = res;
-      onProductsRetrieval(products);
+      }
+      onProductsRetrieval(products, sortFunction);
     });
   },
 
@@ -94,12 +137,17 @@ const db = {
       id: id
     }).
     exec((err, res) => {
-      if (!err) product = res;
+      if (!err && res.length > 0) product = res;
       onProductRetrieval(product);
     });
   },
 
   createProduct: function (id, name, price, image, category, description, features, onCreated) {
+    if (!productValidator(id, name, price, image, category, description, features)) {
+      onCreated(false);
+      return;
+    }
+
     let product = new Product({
       id: id,
       name: name,
@@ -117,13 +165,15 @@ const db = {
 
   removeProductWithId: function (id, onRemoved) {
     Product.
-    deleteOne({
-      id: id
-    }).
-    exec(err => {
-      if (!err) onRemoved(true);
-      else onRemoved(false);
-    });
+    remove({
+        id: id
+      },
+      (err, res) => {
+        if (res.result.n > 0) {
+          onRemoved(true);
+        } else
+          onRemoved(false);
+      });
   },
 
   removeAllProducts: function (onRemoved) {

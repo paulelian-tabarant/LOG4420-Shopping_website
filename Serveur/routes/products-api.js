@@ -7,12 +7,9 @@ Products API
 All routes used to interact with our products databse
 */
 
-router.get('/products', (req, res, next) => {
-  // redirecting to /products/:id instead
-  if (req.params.id) next();
-
+router.get('/products/', (req, res, next) => {
   // Called when products have been retrieved from the DB
-  let onProductsRetrieval = function (products) {
+  let onProductsRetrieval = function (products, sortFunction) {
     let productsJSON = [];
     if (products) {
       products.forEach(product => {
@@ -27,7 +24,8 @@ router.get('/products', (req, res, next) => {
         }
         productsJSON.push(productJSON);
       });
-      res.json(productsJSON);
+      res.json(productsJSON.sort(sortFunction));
+      res.end();
     } else {
       res.status(400);
       res.send("Critère ou catégorie invalide.");
@@ -43,9 +41,12 @@ router.get('/products/:id', (req, res, next) => {
   //called when product has been retrieved from the DB 
   let onProductRetrieval = function (product) {
     if (product)
-      res.json(product);
-    else // redirects to 404
-      next();
+      res.json(product[0]);
+    else {
+      // redirects to 404
+      res.status(404);
+      res.send("Produit non trouvé.");
+    }
   }
 
   db.getProductById(req.params.id, onProductRetrieval);
@@ -92,7 +93,7 @@ router.delete('/products/', (req, res) => {
     if (removed) {
       res.status(204);
       res.send("Tous les produits ont été supprimés de la base de données.");
-    }
+    } 
   };
 
   db.removeAllProducts(onRemoved);
