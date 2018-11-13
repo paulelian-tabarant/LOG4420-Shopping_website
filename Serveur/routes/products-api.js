@@ -12,20 +12,7 @@ router.get('/products/', (req, res, next) => {
   let onProductsRetrieval = function (products, sortFunction) {
     let productsJSON = [];
     if (products) {
-      products.forEach(product => {
-        let productJSON = {
-          "id": product.id,
-          "name": product.name,
-          "price": product.price,
-          "image": product.image,
-          "category": product.category,
-          "description": product.description,
-          "features": product.features
-        }
-        productsJSON.push(productJSON);
-      });
-      res.json(productsJSON.sort(sortFunction));
-      res.end();
+      res.json(products.sort(sortFunction));
     } else {
       res.status(400);
       res.send("Critère ou catégorie invalide.");
