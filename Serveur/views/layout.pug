@@ -8,18 +8,18 @@ html
 		header
 			.header-container
 				.logo
-					a(href='./accueil')
+					a(href='/accueil')
 						img(alt='logo', src='./assets/img/logo.svg', title='Accueil')
 				nav
 					ul
 						li(class={active: title=="Accueil"})
-							a(href='./accueil') Accueil
+							a(href='/accueil') Accueil
 						li(class={active: title=="Produits"})
-							a(href='./produits') Produits
+							a(href='/produits') Produits
 						li(class={active: title=="Contact"})
-							a(href='./contact') Contact
+							a(href='/contact') Contact
 						li
-							a.shopping-cart(href='./panier', title='Panier')
+							a.shopping-cart(href='/panier', title='Panier')
 								span.fa-stack.fa-lg
 									i.fa.fa-circle.fa-stack-2x.fa-inverse
 									i.fa.fa-shopping-cart.fa-stack-1x
