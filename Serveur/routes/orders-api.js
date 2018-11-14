@@ -21,7 +21,7 @@ router.get("/orders/:id", (req, res) => {
     let onOrderRetrieval = (order) => {
         if(order) {
             res.status(200);
-            res.json(order);
+            res.json(order[0]);
         }
         else {
             res.status(404);
@@ -35,7 +35,7 @@ router.get("/orders/:id", (req, res) => {
 router.post("/orders", (req, res) => {
     let onCreated = (created) => {
         if(created) {
-            res.status(200);
+            res.status(201);
             res.send("Commande ajoutée à la base de données.");
         }
         else {

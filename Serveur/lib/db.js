@@ -58,6 +58,28 @@ function productValidator(id, name, price, image, category, description, feature
   }
 }
 
+function orderValidator(id, firstName, lastName, email, phone, products) {
+  try {
+    let idBool = validator.isInt(String(id)),
+      firstNameBool = typeof (firstName) === "string" && firstName.length > 0,
+      lastNameBool = typeof (lastName) === "string" && lastName.length > 0,
+      emailBool = validator.isEmail(email),
+      phoneBool = /^[0-9]{3}-[0-9]{3}-[0-9]{4}$/.test(phone);
+    let productsBool = true;
+    if (products.length === 0) productsBool = false;
+    products.forEach(product => {
+      let idBool = validator.isInt(String(product.id));
+      let quantityBool = validator.isInt(String(product.quantity)) && product.quantity > 0;
+      productsBool = productsBool && idBool && quantityBool;
+    });
+    let valid = idBool && firstNameBool && lastNameBool && emailBool && phoneBool && productsBool;
+    return valid;
+  } catch (err) {
+    console.log(err);
+    return false;
+  }
+}
+
 const Order = mongoose.model("Order", orders);
 const Product = mongoose.model("Product", products);
 
@@ -75,24 +97,23 @@ const db = {
   catList: ["cameras", "computers", "consoles", "screens"],
   criList: ["alpha-asc", "alpha-dsc", "price-asc", "price-dsc"],
 
-  sortByPriceAsc: function(a, b) {
+  sortByPriceAsc: function (a, b) {
     return a.price - b.price;
   },
 
-  sortByPriceDsc : function(a, b) {
+  sortByPriceDsc: function (a, b) {
     return b.price - a.price;
   },
 
-  sortByNameAsc : function (a, b) {
+  sortByNameAsc: function (a, b) {
     return a.name.localeCompare(b.name);
   },
 
-  sortByNameDsc : function (a, b) {
+  sortByNameDsc: function (a, b) {
     return b.name.localeCompare(a.name);
   },
 
   getProducts: function (category, criterion, onProductsRetrieval) {
-
     let products = [];
     let sortFunction = null;
     if (!criterion)
@@ -183,10 +204,103 @@ const db = {
       if (err) onRemoved(false);
       else onRemoved(true);
     });
+  },
+
+  // Orders database monitoring
+  getAllOrders: function (onOrdersRetrieval) {
+    let orders = []
+    Order.find()
+      .exec((err, res) => {
+        if (res.length > 0)
+          orders = res;
+        onOrdersRetrieval(orders);
+      });
+  },
+
+  getOrderById: function (id, onOrderRetrieval) {
+    let order = null;
+    Order.find({
+        id: id
+      })
+      .exec((err, res) => {
+        if (!err && res.length > 0) {
+          order = res;
+        }
+        onOrderRetrieval(order);
+      });
+  },
+
+  createOrder: function (id, firstName, lastName, email, phone, products, onCreated) {
+    // input format validation
+    let valid = orderValidator(id, firstName, lastName, email, phone, products);
+    if (!valid) {
+      onCreated(false);
+      return;
+    }
+
+    // checking if each products' id is actually associated with 
+    // a product in the DB
+    let onProductsIdsVerified = (valid) => {
+      if (valid) {
+        let order = new Order({
+          id: id,
+          firstName: firstName,
+          lastName: lastName,
+          email: email,
+          phone: phone,
+          products: products
+        });
+        order.save((err) => {
+          if (err) {
+            console.log(err);
+            onCreated(false);
+          } else {
+            console.log("La commande devrait être créée.");
+            onCreated(true);
+          }
+        });
+      } else {
+        onCreated(false);
+      }
+    };
+    let checkProduct = (products, index) => {
+      this.getProductById(products[index].id, (product) => {
+        if(!product) {
+          // current product's id is not valid
+          onProductsIdsVerified(false);
+        } else if (index === products.length-1) {
+          // occurs only if all products ids are valid
+          onProductsIdsVerified(true);
+        } else {
+          // when all products ids are valid so far but there are other left to verify
+          checkProduct(products, index+1);
+        }
+      });
+    };
+    // checking products ids for each one
+    checkProduct(products, 0);
+  },
+
+  removeOrderById: function (id, onRemoved) {
+    Order.
+    remove({
+        id: id
+      },
+      (err, res) => {
+        if (res.result.n > 0) {
+          onRemoved(true);
+        } else
+          onRemoved(false);
+      });
+  },
+
+  removeAllOrders: function (onRemoved) {
+    Order.deleteMany()
+      .exec(err => {
+        if (err) onRemoved(false);
+        else onRemoved(true);
+      });
   }
-
-
-  // to be completed with other API middlewares requirements...
 }
 
 module.exports = db;
