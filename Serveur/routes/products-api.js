@@ -32,7 +32,7 @@ router.get('/products/:id', (req, res, next) => {
     else {
       // redirects to 404
       res.status(404);
-      res.send("Produit non trouvé.");
+      res.send("Produit non trouvé!");
     }
   }
 
@@ -67,7 +67,7 @@ router.delete('/products/:id', (req, res, next) => {
   let onRemoved = function (removed) {
     if (removed) {
       res.status(204);
-      res.send(`Le produit d'itentifiant n°${id} a été correctement supprimé de la base de données.`);
+      res.send("Le produit d'itentifiant n°${id} a été correctement supprimé de la base de données.");
     } else
       next();
   }

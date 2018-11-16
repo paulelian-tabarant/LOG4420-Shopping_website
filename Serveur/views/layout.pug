@@ -9,7 +9,7 @@ html
 			.header-container
 				.logo
 					a(href='/accueil')
-						img(alt='logo', src='./assets/img/logo.svg', title='Accueil')
+						img(alt='logo', src='/assets/img/logo.svg', title='Accueil')
 				nav
 					ul
 						li(class={active: title=="Accueil"})
@@ -23,15 +23,15 @@ html
 								span.fa-stack.fa-lg
 									i.fa.fa-circle.fa-stack-2x.fa-inverse
 									i.fa.fa-shopping-cart.fa-stack-1x
-								span.count 3
+								span(class="count" class={visible: itemsCount > 0})= itemsCount
 		block content
 	footer
 		p Alban Deniau - 1969132
 		p Paul-Elian Tabarant - 1969626
 	block scripts
-		script(type='text/javascript',src='./assets/js/jquery-3.2.1.min.js')
-		script(type='text/javascript',src='./assets/scripts/utils.js')
-		script(type='text/javascript',src='./assets/scripts/products.service.js')
-		script(type='text/javascript',src='./assets/scripts/shopping-cart.service.js')
-		script(type='text/javascript',src='./assets/scripts/shopping-cart.controller.js')
+		script(type='text/javascript',src='/assets/js/jquery-3.2.1.min.js')
+		script(type='text/javascript',src='/assets/scripts/utils.js')
+		script(type='text/javascript',src='/assets/scripts/products.service.js')
+		script(type='text/javascript',src='/assets/scripts/shopping-cart.service.js')
+		script(type='text/javascript',src='/assets/scripts/shopping-cart.controller.js')
 

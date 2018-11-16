@@ -10,6 +10,7 @@ require("./lib/db");
 const index = require("./routes/index");
 const productsApi = require("./routes/products-api");
 const ordersApi = require("./routes/orders-api");
+const shoppingCartApi = require("./routes/shopping-cart-api");
 
 const app = express();
 
@@ -39,6 +40,7 @@ app.use(session({
 app.use("/", index);
 app.use("/api", productsApi);
 app.use("/api", ordersApi);
+app.use("/api", shoppingCartApi);
 
 // catch 404 and forward to error handler
 app.use((req, res, next)=> {

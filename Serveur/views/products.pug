@@ -19,9 +19,16 @@ block content
 					button(data-criteria='alpha-asc') Nom (A-Z)
 					button(data-criteria='alpha-dsc') Nom (Z-A)
 		article
-			span#products-count.right-header 13 produits
+			span#products-count.right-header= products.length + " produits"
 			h1 Produits
 			#products-list.products
-				.loading
+				each product in products
+					.product(data-product-id=product.id)
+						a(href='./produits/'+product.id, title='En savoir plus...')
+							h2=product.name
+							img(alt='product', src='./assets/img/'+product.image)
+							p.price
+								small Prix
+								|  #{product.price.toFixed(2).replace(".", ",") + "$"}
 append scripts
-	script(type='text/javascript', src='./assets/scripts/products.controller.js')
+	script(type='text/javascript', src='/assets/scripts/products.controller.js')
