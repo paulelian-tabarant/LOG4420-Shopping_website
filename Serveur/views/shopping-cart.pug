@@ -2,23 +2,49 @@ extends layout
 
 block content
 	main
-		h1 Panier
-		#shopping-cart-container
-		table.table.shopping-cart-table
-			thead
-			tr
-				th
-				th Produit
-				th Prix unitaire
-				th Quantité
-				th Prix
-			tbody
-		p.shopping-cart-total
-			| Total: 
-			strong#total-amount
-		a.btn.pull-right(href='./order')
-			| Commander 
-			i.fa.fa-angle-double-right
-		button#remove-all-items-button.btn
-			i.fa.fa-trash-o
-			|   Vider le panier
+		article
+			h1 Panier
+			#shopping-cart-container
+				if products.length != 0
+					table.table.shopping-cart-table
+						thead
+							tr
+								th
+								th Produit
+								th Prix unitaire
+								th Quantité
+								th Prix
+						tbody
+							-var total = 0
+							each product in products
+								tr(data-product-id=product.productId)
+									td
+										button.remove-item-button
+											i.fa.fa-times
+									td
+										a(href="/products/"+product.productId)=product.name
+									td=product.price.toFixed(2).replace(".", ",") + "$"
+									td
+										if product.quantity > 1
+											button.remove-quantity-button
+												i.fa.fa-minus
+										else
+											button.remove-quantity-button(disabled)
+												i.fa.fa-minus
+										span.quantity=product.quantity
+										button.add-quantity-button
+											i.fa.fa-plus
+									td.price=(product.price*product.quantity).toFixed(2).replace(".", ",") + "$"
+									-total += product.price*product.quantity
+					p.shopping-cart-total
+						| Total:
+						strong#total-amount=total.toFixed(2).replace(".", ",") + "$"
+					a.btn.pull-right(href='./commande')
+						| Commander 
+						i.fa.fa-angle-double-right
+					button#remove-all-items-button.btn
+						i.fa.fa-trash-o
+						|   Vider le panier
+				else
+					p#no-item-in-cart Aucun produit dans le panier.
+
