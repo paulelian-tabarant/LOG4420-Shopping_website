@@ -107,16 +107,18 @@ router.get("/commande", (req, res) => {
 
 router.post("/confirmation", (req, res) => {
 	let itemsCount = 0;
-	let id = req.body.id,
-    firstName = req.body.firstName,
+    let firstName = req.body.firstName,
     lastName = req.body.lastName;
     let fullName = firstName+" "+lastName;
-	if(req.session.products) {
-		req.session.products.forEach(product => {
-			itemsCount += product.quantity;
-		});
-	}
-	res.render("confirmation", { title: "Confirmation", message: "Ça semble fonctionner!", orderId: id, fullName: fullName, itemsCount: itemsCount});
+    db.getLastOrderFromName(firstName, lastName, function(order) {
+    	let id = order.id;
+		if(req.session.products) {
+			req.session.products.forEach(product => {
+				itemsCount += product.quantity;
+			});
+		}
+		res.render("confirmation", { title: "Confirmation", message: "Ça semble fonctionner!", orderId: id, fullName: fullName, itemsCount: itemsCount});
+    });
 });
 
 module.exports = router;

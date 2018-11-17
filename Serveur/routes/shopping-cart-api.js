@@ -38,14 +38,16 @@ router.get('/shopping-cart/:productId', (req, res) => {
   }
 });
 
-router.post('/shopping-cart', (req, res) => {
+router.post('/shopping-cart', (req, res, next) => {
   let sess = req.session;
   let productId = req.body.productId,
   	quantity = req.body.quantity;
+  let err = false;
 
   if(!Number.isInteger(quantity) || quantity < 0 ) {
   	res.status(400);
     res.send("La quantite specifiee est invalide.");
+    err = true;
   }
 
   if(!sess.products) {
@@ -56,23 +58,29 @@ router.post('/shopping-cart', (req, res) => {
 	  	if(product.productId == productId) {
 	  		res.status(400);
       	res.send("Le produit a deja ete ajoute au panier.");
+        err = true;
 	  	}
 	  });
   }
-
-  let onAddToCart = function (product) {
-  	if (product) {
-      sess.products.push({"productId": productId, "quantity": quantity});
-  	  res.status(201);
-  	  res.send("Le produit a été ajouté au panier.");
-  	}
-    else {
-      res.status(400);
-      res.send("L'identifiant "+productId+" n'existe pas.");
+  if(!err) {
+    let onAddToCart = function (product) {
+    	if (product) {
+        sess.products.push({"productId": productId, "quantity": quantity});
+    	  res.status(201);
+    	  res.send("Le produit a été ajouté au panier.");
+    	}
+      else {
+        res.status(400);
+        res.send("L'identifiant "+productId+" n'existe pas.");
+        err = true;
+      }
     }
-  }
 
-  db.getProductById(productId, onAddToCart);
+    db.getProductById(productId, onAddToCart);
+  }
+  else {
+    next();
+  }
 });
 
 router.put('/shopping-cart/:productId', (req, res) => {

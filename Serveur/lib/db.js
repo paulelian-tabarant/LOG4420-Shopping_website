@@ -230,6 +230,20 @@ const db = {
       });
   },
 
+  getLastOrderFromName: function (firstName, lastName, onOrderRetrieval) {
+    let order = null;
+    Order.find({
+        firstName: firstName,
+        lastName: lastName
+      })
+      .exec((err, res) => {
+        if (!err && res.length > 0) {
+          order = res[res.length-1];
+        }
+        onOrderRetrieval(order);
+      });
+  },
+
   createOrder: function (id, firstName, lastName, email, phone, products, onCreated) {
     // input format validation
     let valid = orderValidator(id, firstName, lastName, email, phone, products);
