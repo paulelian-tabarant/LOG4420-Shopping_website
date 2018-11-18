@@ -269,7 +269,6 @@ const db = {
             console.log(err);
             onCreated(false);
           } else {
-            console.log("La commande devrait être créée.");
             onCreated(true);
           }
         });
