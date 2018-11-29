@@ -16,4 +16,5 @@ export class AppComponent {
   ];
 
   // TODO: À compléter
+  itemsCount = 2;
 }
