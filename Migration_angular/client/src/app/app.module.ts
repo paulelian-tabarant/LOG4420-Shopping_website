@@ -14,6 +14,7 @@ import { OrderComponent } from './order/order.component';
 import { ConfirmationComponent } from './confirmation/confirmation.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProductsService } from './products.service';
+import { PricePipe } from './app.price';
 
 // Application routes
 const appRoutes: Routes = [
@@ -30,6 +31,7 @@ const appRoutes: Routes = [
 
 @NgModule({
   declarations: [
+    PricePipe,
     AppComponent,
     HomeComponent,
     ProductsComponent,
