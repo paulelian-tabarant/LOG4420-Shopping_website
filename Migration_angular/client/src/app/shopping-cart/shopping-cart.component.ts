@@ -21,7 +21,7 @@ export class ShoppingCartComponent implements OnInit {
   totalAmount: number;
 
   constructor(private shoppingCartService: ShoppingCartService,
-              private productsService: ProductsService) { }
+    private productsService: ProductsService) { }
 
   ngOnInit() {
     this.refreshItemsList();
@@ -34,10 +34,10 @@ export class ShoppingCartComponent implements OnInit {
   refreshItemsList() {
     this.items = [];
     this.shoppingCartService.getItems()
-      .then( cartItems => {
+      .then(cartItems => {
         cartItems.forEach(item => {
           this.productsService.getProduct(item.productId)
-            .then( product => {
+            .then(product => {
               this.items.push({
                 id: item.productId,
                 name: product.name,
@@ -47,21 +47,24 @@ export class ShoppingCartComponent implements OnInit {
             });
         });
       });
+    this.items.sort((item1, item2) => item1.name.localeCompare(item2.name));
     this.totalAmount = this.getTotalAmount();
   }
 
   deleteItem(item: ItemRow) {
-    this.shoppingCartService.deleteItem(item.id)
-      .then(() => this.refreshItemsList());
+    if (confirm("Êtes-vous sûr de vouloir supprimer ce produit du panier ?")) {
+      this.shoppingCartService.deleteItem(item.id)
+        .then(() => this.refreshItemsList());
+    }
   }
 
   decrementQuantity(item: ItemRow) {
-    this.shoppingCartService.updateItemQuantity(item.id, item.quantity-1)
+    this.shoppingCartService.updateItemQuantity(item.id, item.quantity - 1)
       .then(() => this.refreshItemsList());
-  } 
+  }
 
   incrementQuantity(item: ItemRow) {
-    this.shoppingCartService.updateItemQuantity(item.id, item.quantity+1)
+    this.shoppingCartService.updateItemQuantity(item.id, item.quantity + 1)
       .then(() => this.refreshItemsList());
   }
 
@@ -74,7 +77,9 @@ export class ShoppingCartComponent implements OnInit {
   }
 
   deleteAllItems() {
-    this.shoppingCartService.clear()
-      .then(() => this.refreshItemsList());
+    if (confirm("Êtes-vous sûr de vouloir vider votre panier ?")) {
+      this.shoppingCartService.clear()
+        .then(() => this.refreshItemsList());
+    }
   }
 }
