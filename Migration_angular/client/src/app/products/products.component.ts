@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { Product, ProductsService } from '../products.service';
 
@@ -21,7 +21,6 @@ export class ProductsComponent implements OnInit {
 
   getProducts(sortingCriteria?: string, category?: string): void {
     this.productsService.getProducts()
-      .then(products => this.products = products)
-      .catch(this.ProductsService.handleError);
+      .then(products => this.products = products);
   }
 }

@@ -9,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class ShoppingCartComponent {
   // TODO: À compléter
+  products: Product[];
 }

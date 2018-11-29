@@ -11,7 +11,30 @@
     </tr>
     </thead>
     <tbody>
-      <tr>
+      <tr *ngFor="let product of products">
+        <td>
+          <button class="remove-item-button" title="Supprimer">
+            <i class="fa fa-times"></i>
+          </button>
+        </td>
+        <td>
+          <a routerLink="/produits/{{product.id}}">{{product.name}}</a>
+        </td>
+        <td>{{product.price | formatPrice}}</td>
+        <td>
+          <div class="row">
+            <div class="col">
+              <button class="remove-quantity-button" title="Retirer" disabled><i class="fa fa-minus"></i></button>
+            </div>
+            <div class="col quantity">1</div>
+            <div class="col">
+              <button class="add-quantity-button" title="Ajouter"><i class="fa fa-plus"></i></button>
+            </div>
+          </div>
+        </td>
+        <td class="price">199,99&thinsp;$</td>
+      </tr>
+      <!-- <tr>
         <td>
           <button class="remove-item-button" title="Supprimer">
             <i class="fa fa-times"></i>
@@ -79,7 +102,7 @@
           </div>
         </td>
         <td class="price">449,97&thinsp;$<</td>
-      </tr>
+      </tr> -->
     </tbody>
   </table>
   <p class="shopping-cart-total">Total: <strong id="total-amount">704,94&thinsp;$</strong></p>
