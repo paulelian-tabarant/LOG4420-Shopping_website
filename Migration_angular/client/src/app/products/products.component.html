@@ -2,20 +2,20 @@
   <section>
     <h2>Catégories</h2>
     <div class="btn-group vertical" id="product-categories">
-      <button>Appareils photo</button>
-      <button>Consoles</button>
-      <button>Écrans</button>
-      <button>Ordinateurs</button>
-      <button class="selected">Tous les produits</button>
+      <button [ngClass]="curCategory === 'cameras' ? 'selected' : ''" (click)="getProducts(null, 'cameras')">Appareils photo</button>
+      <button [ngClass]="curCategory === 'consoles' ? 'selected' : ''" (click)="getProducts(null, 'consoles')">Consoles</button>
+      <button [ngClass]="curCategory === 'screens' ? 'selected' : ''" (click)="getProducts(null, 'screens')">Écrans</button>
+      <button [ngClass]="curCategory === 'computers' ? 'selected' : ''" (click)="getProducts(null, 'computers')">Ordinateurs</button>
+      <button [ngClass]="curCategory === 'all' ? 'selected' : ''" (click)="getProducts(null, 'all')">Tous les produits</button>
     </div>
   </section>
   <section>
     <h2>Classement</h2>
     <div class="btn-group vertical" id="product-criteria">
-      <button class="selected">Prix (bas-haut)</button>
-      <button>Prix (haut-bas)</button>
-      <button>Nom (A-Z)</button>
-      <button>Nom (Z-A)</button>
+      <button [ngClass]="curSorting === 'price-asc' ? 'selected' : ''" (click)="getProducts('price-asc', null)">Prix (bas-haut)</button>
+      <button [ngClass]="curSorting === 'price-dsc' ? 'selected' : ''" (click)="getProducts('price-dsc', null)">Prix (haut-bas)</button>
+      <button [ngClass]="curSorting === 'alpha-asc' ? 'selected' : ''" (click)="getProducts('alpha-asc', null)">Nom (A-Z)</button>
+      <button [ngClass]="curSorting === 'alpha-dsc' ? 'selected' : ''" (click)="getProducts('alpha-dsc', null)">Nom (Z-A)</button>
     </div>
   </section>
 </section>
@@ -27,7 +27,7 @@
       <a routerLink="/produits/{{product.id}}" title="En savoir plus...">
         <h2>{{product.name}}</h2>
         <img alt="product.name" src="./assets/img/{{product.image}}">
-        <p><small>Prix</small> {{product.price}}</p>
+        <p><small>Prix</small> {{product.price | price}} $</p>
       </a>
     </div>
     <!-- <div class="product">

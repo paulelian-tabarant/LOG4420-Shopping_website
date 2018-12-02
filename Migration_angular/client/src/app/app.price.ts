@@ -5,6 +5,6 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class PricePipe implements PipeTransform {
     transform(price: number): string {
-        return String(Math.round(price * 100) / 100);
+        return String(Math.round(price * 100) / 100).replace('.', ',');
     }
 }

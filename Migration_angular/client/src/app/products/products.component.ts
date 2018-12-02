@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { Product, ProductsService } from '../products.service';
 
@@ -10,18 +10,30 @@ import { Product, ProductsService } from '../products.service';
   templateUrl: './products.component.html'
 })
 export class ProductsComponent implements OnInit {
-  // TODO: À compléter
   products: Product[];
 
-  constructor(private productsService: ProductsService) { }
+  curCategory: string;
+  curSorting: string;
+
+  constructor(private productsService: ProductsService) { 
+    this.curCategory = 'all';
+    this.curSorting = 'price-asc';
+  }
 
   ngOnInit() {
     this.getProducts();
   }
 
   getProducts(sortingCriteria?: string, category?: string): void {
-    this.productsService.getProducts()
-      .then(products => this.products = products)
-      .catch(this.ProductsService.handleError);
+    if(sortingCriteria)
+      this.curSorting = sortingCriteria;
+    if(category)
+      this.curCategory = category;
+    let reqCategory = this.curCategory;
+    // if 'all' selected, the request must be sent without any category string
+    if (this.curCategory === 'all')
+      reqCategory = null;
+    this.productsService.getProducts(this.curSorting, reqCategory)
+      .then(products => this.products = products);
   }
 }
