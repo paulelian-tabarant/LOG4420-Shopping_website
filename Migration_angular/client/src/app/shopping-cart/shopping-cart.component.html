@@ -42,7 +42,7 @@
         </tr>
       </tbody>
     </table>
-    <p class="shopping-cart-total">Total: <strong id="total-amount">{{totalAmount}}&thinsp;$</strong></p>
+    <p class="shopping-cart-total">Total: <strong id="total-amount">{{totalAmount | price}}&thinsp;$</strong></p>
     <a class="btn pull-right" routerLink="/commande">Commander <i class="fa fa-angle-double-right"></i></a>
     <button class="btn" id="remove-all-items-button" (click)="deleteAllItems()"><i class="fa fa-trash-o"></i>&nbsp; Vider le panier</button>
   </div>

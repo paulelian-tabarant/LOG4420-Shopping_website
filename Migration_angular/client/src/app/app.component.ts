@@ -20,9 +20,17 @@ export class AppComponent implements OnInit {
   constructor(private shoppingCartService: ShoppingCartService) { }
 
   ngOnInit() {
+    this.getItemsCount();
+  }
+
+  getItemsCount(): void {
     this.shoppingCartService.getItems()
       .then(items => {
-        this.cartItemsCount = items.length;
+        let total = 0;
+        items.forEach((item) => {
+          total += item.quantity;
+        })
+        this.cartItemsCount = total;
       });
   }
 }

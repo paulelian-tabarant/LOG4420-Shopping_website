@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Config } from './config';
 
 /**
@@ -29,10 +29,10 @@ export class ShoppingCartService {
    */
   getItems(): Promise<CartItem[]> {
     const url = `${Config.apiUrl}/shopping-cart`;
-    return this.http.get(url)
+    const options = { withCredentials: true }
+    return this.http.get(url, options)
       .toPromise()
       .then(cartItems => {
-          console.log(cartItems);
           return cartItems as CartItem[]
         })
       .catch(ShoppingCartService.handleError);
@@ -46,10 +46,12 @@ export class ShoppingCartService {
    */
   addItem(productId: number, quantity: number): Promise<any> {
     const url = `${Config.apiUrl}/shopping-cart`;
-    return this.http.post(url, {
+    const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+    const options = { headers: headers, withCredentials: true }
+    return this.http.post(url, JSON.stringify({
       "productId": productId,
       "quantity": quantity
-    })
+    }), options)
       .toPromise()
       .then(created => null)
       .catch(ShoppingCartService.handleError);
@@ -63,7 +65,9 @@ export class ShoppingCartService {
    */
   updateItemQuantity(productId: number, newQuantity: number): Promise<any> {
     const url = `${Config.apiUrl}/shopping-cart/${productId}`;
-    return this.http.put(url, {'quantity': newQuantity})
+    const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+    const options = { headers: headers, withCredentials: true}
+    return this.http.put(url, JSON.stringify({'quantity': newQuantity}), options)
       .toPromise()
       .then(updated => null) 
       .catch(ShoppingCartService.handleError);
@@ -76,7 +80,8 @@ export class ShoppingCartService {
    */
   deleteItem(productId: number): Promise<any> {
     const url = `${Config.apiUrl}/shopping-cart/${productId}`;
-    return this.http.delete(url)
+    const options = { withCredentials: true }
+    return this.http.delete(url, options)
       .toPromise()
       .then(removed => null)
       .catch(ShoppingCartService.handleError);
@@ -87,7 +92,8 @@ export class ShoppingCartService {
    */
   clear(): Promise<any> {
     const url = `${Config.apiUrl}/shopping-cart/`;
-    return this.http.delete(url)
+    const options = { withCredentials: true }
+    return this.http.delete(url, options)
       .toPromise()
       .then(cleared => null)
       .catch(ShoppingCartService.handleError);

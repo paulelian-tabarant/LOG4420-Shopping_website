@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CartItem, ShoppingCartService } from '../shopping-cart.service';
 import { Product, ProductsService } from '../products.service';
+import { AppComponent } from '../app.component'
 
 class ItemRow {
   id: number;
@@ -21,7 +22,8 @@ export class ShoppingCartComponent implements OnInit {
   totalAmount: number;
 
   constructor(private shoppingCartService: ShoppingCartService,
-    private productsService: ProductsService) { }
+    private productsService: ProductsService,
+    private appComponent: AppComponent) { }
 
   ngOnInit() {
     this.refreshItemsList();
@@ -35,6 +37,7 @@ export class ShoppingCartComponent implements OnInit {
     this.items = [];
     this.shoppingCartService.getItems()
       .then(cartItems => {
+        console.log("Cart: ", cartItems);
         cartItems.forEach(item => {
           this.productsService.getProduct(item.productId)
             .then(product => {
@@ -44,11 +47,12 @@ export class ShoppingCartComponent implements OnInit {
                 price: product.price,
                 quantity: item.quantity
               });
+              this.items.sort((item1, item2) => item1.name.localeCompare(item2.name, 'en', {'sensitivity': 'base'}));
+              this.totalAmount = this.getTotalAmount();
             });
         });
+        this.appComponent.getItemsCount();
       });
-    this.items.sort((item1, item2) => item1.name.localeCompare(item2.name));
-    this.totalAmount = this.getTotalAmount();
   }
 
   deleteItem(item: ItemRow) {
@@ -71,7 +75,7 @@ export class ShoppingCartComponent implements OnInit {
   getTotalAmount() {
     let total = 0.0;
     this.items.forEach(item => {
-      total += item.price;
+      total += item.price * item.quantity;
     });
     return total;
   }
